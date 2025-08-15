@@ -21,4 +21,25 @@
     justify-content: flex-end;
 }
 
+.footer__name {
+    font-family: Cabinet Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+}
+
+.footer__year {
+    font-family: Cabinet Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+}
   
