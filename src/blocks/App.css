@@ -1,0 +1,51 @@
+#root {
+  max-width: 1440px;  
+  margin: 0 auto;          
+  padding: 20px; 
+  min-height: 100vh;        
+}
+
+.logo {
+width: 89;
+height: 40;
+font-family: Cabinet Grotesk;
+font-weight: 900;
+font-style: Black;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+/*wtwr°*/
+}
+
+/*
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}*/
+
+/*
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+/*
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}*/
+
+.card {
+  padding: 16px 8px;
+  width: 323px;
+  height: 326px;
+  border-width: 1px;
+}
