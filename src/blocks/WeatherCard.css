@@ -1,5 +1,22 @@
-weather__card {
-    width: 1440px;
+.weather__card {
+    width: auto;
     height: 80px;
-    color: gray;
-    }
+    background-color: #FFF;
+}
+
+.weather__card-temp {
+    display: flex;
+    margin: 0 auto;
+    width: 69px;
+    height: 40px;
+    background-color: #F3F3F3;
+    color: #000;
+    font-family: Cabinet Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    leading-trim: NONE;
+    line-height: 40px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}

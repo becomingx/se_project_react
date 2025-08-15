@@ -10,15 +10,19 @@
 .footer__left {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: flex-start;
+    align-self: center;
+    height: 20px;
+    width: 204px;
 }
 
 .footer__right {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: flex-end;
+    align-self: center;
+    height: 20px;
+    width: 38px;
 }
 
 .footer__name {
@@ -29,7 +33,6 @@
     leading-trim: NONE;
     line-height: 20px;
     letter-spacing: 0%;
-    vertical-align: bottom;
 }
 
 .footer__year {
@@ -40,6 +43,5 @@
     leading-trim: NONE;
     line-height: 20px;
     letter-spacing: 0%;
-    vertical-align: bottom;
 }
   

@@ -1,4 +1,6 @@
 #root {
+  display: flex;
+  position: relative;
   max-width: 1440px;  
   margin: 0 auto;          
   padding: 20px; 
@@ -6,25 +8,22 @@
 }
 
 .page {
-  max-width: 1440px;  
-  margin: 0 auto;          
+  max-width: auto;  
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #FFF;          
 }
 
 .logo {
-width: 89;
-height: 40;
-font-family: Cabinet Grotesk;
-font-weight: 900;
-font-style: Black;
-font-size: 32px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%;
+  width: 89;
+  height: 40;
+  font-family: Cabinet Grotesk;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
-.card {
-  padding: 16px 8px;
-  width: 323px;
-  height: 326px;
-  border-width: 1px;
-}
+

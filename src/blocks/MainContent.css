@@ -1,14 +1,39 @@
 .content {
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: #FFF;
 }
+
+.cards__page-section {
+    width: auto;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+
+.cards__list-temp {
+    width: 330px;
+    height: 25px;
+    font-family: Cabinet Grotesk;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-size: 20px;
+    font-style: Bold;      
+    leading-trim: NONE;
+    background-color: #000;
+}
+
 
 .cards__list {
     list-style-type: none;
-    justify-content: center;
+    justify-content:space-between;
+    align-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, 325px);
-    width: auto;
+    max-width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     padding: 0;
-    gap: 0 20px;
+    background-color: #FFF;
   }
+
+
