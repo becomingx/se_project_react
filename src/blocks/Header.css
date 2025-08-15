@@ -1,68 +1,89 @@
-/*.header {}
 
-.header__top {}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  width: 1440px;
+  margin: 0 auto;
+  height: 40px;
+}
 
-.header__logo {}
+.header__left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-.header__info {}
+.header__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-.header__date {}
+.header__logo {
+  align-self: center;
+  width: 89px;
+  height: 40px;
+}
 
-.header__location {}
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  font-style: Bold;
+  width: auto;
+  gap: 10px;
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0;
+  height: 24px;
+}
+
+.header__date {
+  margin: 0;
+}
+
+.header__location {
+  margin: 0;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  font-style: Bold;
+  width: auto;
+  gap: 10px;
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0;
+  height: 24px;
+}
 
 .header__button {}
 
-.header__user {}
+.header__name {
+  display: flex;
+  align-self: flex-end;
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
 
-.header__avatar {}
-
-.header__name {}
-*/
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .header__logo {
-    height: 40px;
-  }
-  
-  .header__info {
-    text-align: right;
-  }
-  
-  .header__date,
-  .header__location {
-    margin: 0;
-    font-size: 0.9rem;
-  }
-  
-  .header__button {
-    margin: 0 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .header__user {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header__avatar {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-  }
-  
-  .header__name {
-    font-weight: bold;
-  }
-  
+.header__avatar {
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  border: 1px;
+}
