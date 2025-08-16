@@ -9,21 +9,29 @@
 }
 
 .cards__list-temp {
-    font-style: Bold;      
-    leading-trim: NONE;
-    background-color: #000;
+    display: flex; 
+    justify-content: center;
     border-radius: 4px;
     width: 325px;
     height: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    background-color: #F3F3F3;  
+}
+
+.cards__list-temp--writing {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
     font-family: Cabinet Grotesk;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0%;
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;    
+    font-style: Bold;      
+    leading-trim: NONE;
+    color: #000;  
 }
-
 
 .cards__list {
     list-style-type: none;

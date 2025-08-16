@@ -8,6 +8,8 @@
     width: 325px;
     height: 328px;
     margin-bottom: 20px;
+    background-image: url(../assets/ItemCardFalse.png);
+    background-position:center;
 }
 
 
@@ -31,4 +33,5 @@
     height: 328px;
     object-fit: cover;
     cursor: pointer;
+
   }
