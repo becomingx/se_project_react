@@ -8,8 +8,8 @@
 }
 
 .page {
-  max-width: auto;  
-  margin: 0 auto;
+  width: 1360px;
+  margin: 0 auto; 
   min-height: 100vh;
   background-color: #FFF;          
 }

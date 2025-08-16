@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f3;
-  width: 1440px;
+  width: auto;
   margin: 0 auto;
   height: 40px;
+  border-radius: 4px;
+
 }
 
 .header__left {

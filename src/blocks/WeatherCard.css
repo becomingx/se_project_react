@@ -1,12 +1,18 @@
 .weather__card {
     width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 80px;
-    background-color: #FFF;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+
 }
 
 .weather__card-temp {
     display: flex;
     margin: 0 auto;
+    border-radius: 8px;
+
     width: 69px;
     height: 40px;
     background-color: #F3F3F3;
