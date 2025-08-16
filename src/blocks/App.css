@@ -1,17 +1,18 @@
 #root {
   display: flex;
   position: relative;
-  max-width: 1440px;  
+  max-width: auto;  
   margin: 0 auto;          
   padding: 20px; 
-  min-height: 100vh;        
+  min-height: 100vh;
+  background-color: #F3F3F3;
 }
 
 .page {
   width: 1360px;
   margin: 0 auto; 
   min-height: 100vh;
-  background-color: #FFF;          
+  background-color: #f3f3f3;          
 }
 
 .logo {

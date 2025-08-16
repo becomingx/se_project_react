@@ -1,11 +1,11 @@
 .content {
-    background-color: #FFF;
+    background-color: #f3f3f3;
 }
 
 .cards__page-section {
     width: auto;
     margin: 0 auto;
-    background-color: #FFF;
+    background-color: #f3f3f3;
 }
 
 .cards__list-temp {
@@ -42,7 +42,7 @@
     grid-template-columns: repeat(auto-fit, 325px);
     width: auto;
     padding: 0;
-    background-color: #FFF;
+    background-color: #f3f3f3;
   }
 
 
