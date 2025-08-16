@@ -12,10 +12,9 @@
     background-position:center;
 }
 
-
 .card__label {
-    width: 73;
-    height: 24;
+    width: 73px;
+    height: 24px;
     border-radius: 4px;
     font-family: Cabinet Grotesk;
     font-weight: 700;
@@ -34,4 +33,24 @@
     object-fit: cover;
     cursor: pointer;
 
-  }
+}
+
+
+
+@media screen and (max-width: 720px) {  
+    .card {
+        height: 328px;
+        width: 325px;
+    }
+  
+    .card__image {
+        height: 328px;
+        width: 325px;
+    }
+  
+    .card__label {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+}

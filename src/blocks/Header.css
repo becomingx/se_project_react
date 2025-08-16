@@ -46,10 +46,18 @@
 }
 
 .header__date {
+  display: flex;
+  text-align:left;
+  flex-direction: row;
+  width: auto;
   margin: 0;
 }
 
 .header__location {
+  display: flex;
+  width: auto;
+  text-align: left;
+  flex-direction: row;
   margin: 0;
 }
 
@@ -82,7 +90,6 @@
 
 .header__name {
   display: flex;
-  align-self: flex-end;
   font-family: Cabinet Grotesk;
   font-weight: 700;
   font-style: Bold;
@@ -98,4 +105,75 @@
   width: 40px;
   height: 40px;
   border: 1px;
+}
+
+@media screen and (max-width: 720px) {
+
+.header {
+  width: auto;
+  align-content: center;
+  height: 40px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header__logo {
+  align-self: center;
+  width: 70px;
+  height: 40px;
+}
+
+.header__left {
+  align-items: center;
+}
+
+.header__right {
+  align-items: center;
+}
+
+
+.header__info {
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 16px;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.header__date {
+  text-align: center;
+}
+
+.header__location {
+  text-align: center;
+}
+
+.header__user {
+  gap: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  height: 20px;
+}
+
+.header__button {
+  width: auto;
+  text-align: center;
+  height: 20px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.header__name {
+  text-align: center;
+  font-size: 16px;
+}
+
+.header__avatar {
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  border: 1px;
+}
 }
