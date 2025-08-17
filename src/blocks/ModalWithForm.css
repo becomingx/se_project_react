@@ -13,18 +13,6 @@
     transition: visibility 0.3s ease-in, opacity 0.3s ease-out;
   }
   
-  .modal__container {
-    box-sizing: border-box;
-    flex-direction: column;
-    gap: 20px;
-    position: relative;
-    background: #FFF;
-    width: 496px;
-    height: 436px;
-    border-radius: 8px;
-    margin: 0 auto;
-  }
-
   .modal__label--writing {
     font-family: Cabinet Grotesk;
     font-weight: 700;
@@ -36,7 +24,19 @@
     color: #000;
   }
 
-  .modal__label {
+  #modal-with-form .modal__container .modal__label--writing {
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    background: #FFF;
+    width: 496px;
+    height: 436px;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+
+  #modal-with-form .modal__label {
     display: flex;
     flex-direction: column;
     width: 440px;
@@ -44,23 +44,44 @@
     gap: 8px;
   }
   
-  .modal__form .modal__label--writing {
+  #modal-with-form .modal__form  {
     display:flex;
     box-sizing: border-box;
     flex-direction: column;
     width: 440px;
     gap: 20px;
-    height: 24px;
+    height: auto;
+
+  }
+
+  #modal-with-form .modal__input {
+    width: 440px;
+    height: 29px;
     border-width: 1px;
     border-bottom:#000;
   }
 
-  .modal__title .modal__label--writing {
+  #modal-with-form .modal__title  {
     width: 95px;
     height: 20px;
   }
 
-  .modal__submit-btn .modal__label--writing {
+  #modal-with-form .modal__close-btn {
+    display: flex;
+    position: absolute;
+    border-style: none;
+    background-image: url("../assets/modalCloseBtn.svg");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    left: 100%;
+  }
+
+  #modal-with-form .modal__submit-btn {
     width: 124px;
     height: 36px;
     top: 557px;
@@ -68,7 +89,7 @@
     gap: 12px;
   }
   
-  .modal__radio-field .modal__label--writing {
+  #modal-with-form .modal__radio-field {
     width: 173px;
     height: 108px;
   }
@@ -96,13 +117,6 @@
   }
 
   @media screen and (max-width: 720px) {
-    .modal__container {
-        gap: 10px;
-        width: 325px;
-        height: 250px;
-        border-radius: 4px;
-    }
-
     .modal__label--writing {
         font-family: Cabinet Grotesk;
         font-weight: 700;
@@ -113,26 +127,36 @@
         letter-spacing: 0%;
         color: #000;
     }
-    
-    .modal__label {
+    #modal-with-form .modal__container .modal__label--writing {
+        gap: 10px;
+        width: 325px;
+        height: 250px;
+        border-radius: 4px;
+    }
+
+    #modal-with-form .modal__label {
         width: 300px;
         height: 52px;
         gap: 4px;
     }
       
-    .modal__form  .modal__label--writing {
+    #modal-with-form .modal__form {
         width: 300px;
         gap: 10px;
-        height: 24px;
     }
 
-    .modal__submit-btn  .modal__label--writing {
+    #modal-with-form .modal__input {
+        width: 300px;
+    }
+    
+
+    #modal-with-form .modal__submit-btn {
         width: 124px;
         height: 36px;
         gap: 6px;
     }
       
-    .modal__radio-field  .modal__label--writing {
+    #modal-with-form .modal__radio-field  {
         width: 90px;
         height: 75px;
     }  

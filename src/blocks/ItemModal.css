@@ -1,4 +1,4 @@
-#item__modal {
+#item-modal .modal__container {
     display:flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -11,7 +11,7 @@
     border-radius: 8px;
 }
 
-#item__modal .modal__label--writing {
+#item-modal .modal__container .modal__label--writing {
     font-family: Cabinet Grotesk;
     font-weight: 700;
     font-style: Bold;
@@ -21,29 +21,44 @@
     letter-spacing: 0%;
 }
 
-#item__modal .modal__title {
+#item-modal .modal__title {
     display: flex;
     flex-direction: column;
     width: auto;
     height: 24px;
 }
 
-#item__modal .modal__label {
+#item-modal .modal__label {
     width: auto;
     height: 24px;
 }
 
-#item__modal .modal__title {
+#item-modal .modal__title {
     width: auto;
     height: 24px;
 }
 
-#item__modal .image__container {
+#item-modal .image__container {
     width: auto;
     height: auto;
 }
 
-.item__modal--footer {
+#item-modal .modal__close-btn {
+    display: flex;
+    position: absolute;
+    border-style: none;
+    background-image: url("../assets/modalCloseBtn.svg");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    left: 100%;
+}
+
+.modal--footer {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -51,7 +66,7 @@
 }
 
 /*version 2
-#item__modal {
+#item-modal {
     box-sizing: border-box;
     flex-direction: column;
     width: 670px;
@@ -60,7 +75,7 @@
     border-radius: 20px;
 }
 
-#item__modal .modal__title {
+#item-modal .modal__title {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -68,32 +83,21 @@
     height: 24px;
   }
 
-  #item__modal .modal__label {
+  #item-modal .modal__label {
     width: auto;
     height: 24px;
 }
-  
-  #item__modal .modal__form {
-    display:flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    width: 440px;
-    gap: 20px;
-    height: 24px;
-    border-width: 1px;
-    border-bottom:#000;
-  }
 
-  #item__modal .modal__title {
+  #item-modal .modal__title {
     width: 95px;
     height: 20px;
   }
 
-  #item__modal .image__container {
+  #item-modal .image__container {
     width: 325px;
     height: 328px;
     
-    #item__modal .side__container {
+    #item-modal .side__container {
         display: flex;
         width: 325px;
         height: auto;
@@ -102,19 +106,19 @@
 
 @media screen and (max-width: 720px) {
 
-    #item__modal {
+    #item-modal {
         width: 250px;
         height: 310px;
         gap: 10px;
         border-radius: 4px;
     }
     
-    #item__modal .modal__label--writing {
+    #item-modal .modal__label--writing {
         font-size: 16px;
         line-height: 16px;
     }
 
-    #item__modal--footer {
+    #item-modal--footer {
         display: flex;
         justify-content: space-between;
         width: auto;
