@@ -37,4 +37,9 @@ const defaultClothingItems = [
     }
   ]
 
+const openWeatherKey = "aaee6ab22aea5619b8be5635b7d26796";
+
+
+
+
   export { defaultClothingItems };
