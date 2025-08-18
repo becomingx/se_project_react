@@ -36,7 +36,7 @@
   font-style: Bold;
   width: auto;
   gap: 10px;
-  font-family: Cabinet Grotesk;
+  font-family: "CabinetGrotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -69,7 +69,7 @@
   font-style: Bold;
   width: auto;
   gap: 10px;
-  font-family: Cabinet Grotesk;
+  font-family: "CabinetGrotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -82,7 +82,7 @@
   width: auto;
   height: 24px;
   border: none;
-  font-family: Cabinet Grotesk;
+  font-family: "CabinetGrotesk";
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
@@ -90,11 +90,11 @@
   letter-spacing: 0%;
 }
 
-.header__name {
+.header__user-name {
   display: flex;
   align-self: center;
   text-align: center;
-  font-family: Cabinet Grotesk;
+  font-family: "CabinetGrotesk";
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
@@ -168,7 +168,7 @@
   line-height: 16px;
 }
 
-.header__name {
+.header__user-name {
   text-align: center;
   font-size: 16px;
 }
