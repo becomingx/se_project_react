@@ -10,10 +10,11 @@
 .weather-card__temp {
     display: flex;
     position: absolute;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin: 0;
     color: #FFF;
-    margin-left: 10px;
     top: 120px;
+    left: 15%;
     border-radius: 8px;
     width: auto;
     height: auto;
