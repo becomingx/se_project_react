@@ -1,15 +1,13 @@
 #root {
-  display: flex;
-  position: relative;
-  max-width: auto;  
+  max-width: 100%;
   margin: 0 auto;          
-  padding: 20px; 
+  padding:  20px; 
   min-height: 100vh;
   background-color: #F3F3F3;
 }
 
 .page {
-  width: 1360px;
+  max-width: 1360px;
   margin: 0 auto; 
   min-height: 100vh;
   background-color: #f3f3f3;          
@@ -18,7 +16,7 @@
 .logo {
   width: 89;
   height: 40;
-  font-family: CabinetGrotesk;
+  font-family: "CabinetGrotesk";
   font-weight: 900;
   font-style: Black;
   font-size: 32px;
@@ -28,6 +26,12 @@
 }
 
 @media screen and (max-width: 720px) {
-  
+  #root {
+    max-width: 720px;
+  }
+
+  .page {
+    max-width: 720px;
+  }
 }
 

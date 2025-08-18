@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f3;
-  width: auto;
+  max-width: 100%;
   margin: 0 auto;
   height: 40px;
   border-radius: 4px;
@@ -79,9 +79,11 @@
 }
 
 .header__button {
+  display: flex;
   width: auto;
   height: 24px;
   border: none;
+  background-color: #F3f3f3;
   font-family: "CabinetGrotesk";
   font-weight: 700;
   font-style: Bold;
@@ -114,9 +116,10 @@
 @media screen and (max-width: 720px) {
 
 .header {
-  width: auto;
+  flex-direction: column;
   align-content: center;
-  height: 40px;
+  height: auto;
+  gap: 20px;
   border-radius: 4px;
   padding: 0;
   margin: 0 auto;
@@ -124,25 +127,17 @@
 
 .header__logo {
   align-self: center;
+  justify-content: flex-start;
   width: 70px;
   height: 40px;
 }
 
-.header__left {
-  align-items: center;
-}
-
-.header__right {
-  align-items: center;
-}
-
-
 .header__info {
-  justify-content: space-between;
+  justify-content: center;
+  align-self: center;
+  gap: 5px;
   font-size: 16px;
   line-height: 16px;
-  gap: 10px;
-  flex-direction: row;
 }
 
 .header__date {
@@ -154,15 +149,21 @@
 }
 
 .header__user {
+  align-self: center;
+  justify-content: center;
   gap: 5px;
   font-size: 16px;
   line-height: 16px;
   height: 20px;
+
 }
 
 .header__button {
   width: auto;
+  justify-content: flex-start;
+  align-content: center;
   text-align: center;
+  padding: 0;
   height: 20px;
   font-size: 16px;
   line-height: 16px;
@@ -174,10 +175,8 @@
 }
 
 .header__avatar {
-  display: flex;
   align-self: center;
-  width: 40px;
-  height: 40px;
+  justify-content: center;
   border: 1px;
 }
 }

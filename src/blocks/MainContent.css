@@ -1,14 +1,26 @@
 .content {
+    max-width: 100%;
     background-color: #f3f3f3;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .cards__page-section {
-    width: auto;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #f3f3f3;
 }
+
+.cards__list {
+    list-style-type: none;
+    justify-content:center;
+    display: grid;
+    margin: 0 auto;
+    gap: 0 20px;
+    grid-template-columns: repeat(auto-fit, 325px);
+    padding: 0;
+    background-color: #f3f3f3;
+  }
 
 .cards__list-temp {
     display: flex; 
@@ -16,8 +28,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
     border-radius: 4px;
-    width: auto;
-    height: auto;
+    max-width: auto;
     background-color: #F3F3F3;
     font-family: "CabinetGrotesk";
 }
@@ -35,30 +46,22 @@
     color: #000;  
 }
 
-.cards__list {
-    list-style-type: none;
-    justify-content:center;
-    display: grid;
-    margin: 0 auto;
-    gap: 0 20px;
-    grid-template-columns: repeat(auto-fit, 325px);
-    width: auto;
-    padding: 0;
-    background-color: #f3f3f3;
-  }
 
 
   @media screen and (max-width: 720px) {
+    .content {
+        margin: 0 auto;
+    }
 
     .cards__list {
       grid-template-columns: repeat(auto-fit, 325px);
-      width: 325px;
+      max-width: 100%;
     }
     
     .cards__list-temp {
-        width: 125px;
-        margin-top: 20px;
-        margin-bottom: 20px; 
+        justify-self: center;
+        text-align: center;
+        margin: 0;
     }
     
     .cards__list-temp--writing {

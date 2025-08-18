@@ -3,7 +3,7 @@
     justify-content: space-between;
     background-color: #f3f3f3;
     border-radius: 4px;
-    width: auto;
+    max-width: 100%;
     margin-top: 40px;
     height: 40px;
 }
@@ -15,7 +15,7 @@
     align-self: center;
     height: 20px;
     width: 204px;
-    font-family: CabinetGrotesk;
+    font-family: "CabinetGrotesk";
 }
 
 .footer__right {
@@ -25,7 +25,7 @@
     align-self: center;
     height: 20px;
     width: 38px;
-    font-family: CabinetGrotesk;
+    font-family: "CabinetGrotesk";
 }
 
 .footer__name {
@@ -47,5 +47,44 @@
 }
 
 @media screen and (max-width: 720px) {
-  
+    .footer {
+        margin-top: 20px;
+        border-radius: 4px;
+        max-width: 100%;
+        flex-direction: column;
+        margin: 0;
+        gap: 10px;
+    }
+    
+    .footer__left {
+        justify-content: center;
+        height: 20px;
+        width: 204px;
+        font-family: "CabinetGrotesk";
+    }
+    
+    .footer__right {
+        justify-content: center;
+        height: 20px;
+        width: 38px;
+        font-family: "CabinetGrotesk";
+    }
+    
+    .footer__name {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+    
+    .footer__year {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
 }
