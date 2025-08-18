@@ -37,6 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     align-self: center;
+    margin: 0;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0%;
@@ -66,6 +67,8 @@
     
     .cards__list-temp--writing {
         font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
   }
