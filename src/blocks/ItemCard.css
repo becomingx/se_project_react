@@ -8,8 +8,13 @@
     height: 323px;
     width: 325px;
     margin-bottom: 20px;
-    background-image: url(../assets/ItemCardFalse.png);
-    background-position: center;
+    font-family: "CabinetGrotesk";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0%;
 }
 
 .card__label {
