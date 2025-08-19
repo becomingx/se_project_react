@@ -1,3 +1,4 @@
+
 #item-modal .modal__container {
     display:flex;
     box-sizing: border-box;
@@ -10,15 +11,7 @@
     border-radius: 8px;
 }
 
-.modal__footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: auto;
-    height: 112px;
-}
-
-.modal__caption {
+#item-modal .modal__caption {
     width: auto;
     height: 24px;
 }
@@ -26,13 +19,6 @@
 .modal__weather {
     width: auto;
     height: 24px;
-}
-
-/*holds card img from api*/
-.modal__container_type_image {
-    width: 498px;
-    height: 498px;
-    margin: 0 auto;
 }
 
 #item-modal .modal__close-btn {
@@ -50,12 +36,6 @@
     left: 100%;
 }
 
-.modal--footer {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    height: 112px;
-}
 
 @media screen and (max-width: 720px) {
 
