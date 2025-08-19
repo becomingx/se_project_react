@@ -88,6 +88,20 @@ Here, we only use three ranges based on our personal temperature sensitivity, bu
 //ex from openweather
 //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
+//validation import goes here!
+/*
+EX:
+import { checkResponse } from './validation.js';
+
+export const getWeatherData = (coordinates) => {
+  return fetch(`${baseUrl}/weather?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${APIkey}`)
+    .then(checkResponse) // Using validation here
+    .then((data) => {
+      return data;
+    });
+};
+*/
+
 /*
 class WeatherApi {
     constructor({baseUrl, headers}) {

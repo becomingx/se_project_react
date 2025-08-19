@@ -2,7 +2,6 @@
     display:flex;
     box-sizing: border-box;
     flex-direction: column;
-    position: relative;
     background: #FFF;
     margin: 0 auto;
     width: 498px;
@@ -11,36 +10,29 @@
     border-radius: 8px;
 }
 
-#item-modal .modal__container .modal__label--writing {
-    font-family: "CabinetGrotesk";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 20px;
-    leading-trim: NONE;
-    line-height: 24px;
-    letter-spacing: 0%;
-}
-
-#item-modal .modal__title {
+.modal__footer {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    height: 112px;
+}
+
+.modal__caption {
     width: auto;
     height: 24px;
 }
 
-#item-modal .modal__label {
+.modal__weather {
     width: auto;
     height: 24px;
 }
 
-#item-modal .modal__title {
-    width: auto;
-    height: 24px;
-}
-
-#item-modal .image__container {
-    width: auto;
-    height: auto;
+/*holds card img from api*/
+.modal__container_type_image {
+    width: 498px;
+    height: 498px;
+    margin: 0 auto;
 }
 
 #item-modal .modal__close-btn {
@@ -65,60 +57,18 @@
     height: 112px;
 }
 
-/*version 2
-#item-modal {
-    box-sizing: border-box;
-    flex-direction: column;
-    width: 670px;
-    height: 368px;
-    border-width: 1px;
-    border-radius: 20px;
-}
-
-#item-modal .modal__title {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: auto;
-    height: 24px;
-  }
-
-  #item-modal .modal__label {
-    width: auto;
-    height: 24px;
-}
-
-  #item-modal .modal__title {
-    width: 95px;
-    height: 20px;
-  }
-
-  #item-modal .image__container {
-    width: 325px;
-    height: 328px;
-    
-    #item-modal .side__container {
-        display: flex;
-        width: 325px;
-        height: auto;
-  }
-*/
-
 @media screen and (max-width: 720px) {
 
-    #item-modal {
+    #item-modal .modal__container {
         width: 250px;
         height: 310px;
         gap: 10px;
         border-radius: 4px;
-    }
-    
-    #item-modal .modal__label--writing {
         font-size: 16px;
         line-height: 16px;
     }
 
-    #item-modal--footer {
+    .modal__footer {
         display: flex;
         justify-content: space-between;
         width: auto;

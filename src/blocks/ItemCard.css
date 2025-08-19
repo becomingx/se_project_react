@@ -52,6 +52,22 @@
     cursor: pointer;
 }
 
+.card__view-btn {
+    display: flex; 
+    position: absolute;
+    border-radius: 8px;
+    height: 323px;
+    width: 325px;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.card .card__view-btn:hover {
+    opacity: 1;
+    transition-duration: 1s;
+    visibility: visible;
+  }
+
 
 
 @media screen and (max-width: 720px) {  

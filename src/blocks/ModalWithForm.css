@@ -14,7 +14,7 @@
   }
   
   .modal__label--writing {
-    font-family: Cabinet Grotesk;
+    font-family: "CabinetGrotesk";
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
@@ -118,7 +118,7 @@
 
   @media screen and (max-width: 720px) {
     .modal__label--writing {
-        font-family: Cabinet Grotesk;
+        font-family: "CabinetGrotesk";
         font-weight: 700;
         font-style: Bold;
         font-size: 16px;
