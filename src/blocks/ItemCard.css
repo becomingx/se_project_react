@@ -2,7 +2,6 @@
     display: flex; 
     position: relative;
     flex-direction: column;
-    justify-content: center;
     background-color: #F3F3F3;
     border-radius: 8px;
     height: 323px;
@@ -14,10 +13,20 @@
     font-size: 16px;
     leading-trim: NONE;
     line-height: 20px;
+    border: #0000004D;
+    border-width: 1px;
+    border-style:solid;
     letter-spacing: 0%;
 }
 
-.card__label {
+.card__name {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
     width: 73px;
     height: 24px;
     border-radius: 4px;
@@ -28,6 +37,10 @@
     leading-trim: NONE;
     line-height: 20px;
     letter-spacing: 0%;
+    background-color: #FFF;
+    color: #00000099;
+ 
+    
 }
 
 .card__image {
@@ -37,7 +50,6 @@
     width: 325px;
     object-fit: cover;
     cursor: pointer;
-
 }
 
 
