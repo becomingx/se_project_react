@@ -1,115 +1,145 @@
 
-  .add__modal-with-form .modal__container {
-    box-sizing: border-box;
-    flex-direction: column;
-    gap: 20px;
-    position: relative;
-    background: #FFF;
-    width: 496px;
-    height: 436px;
-    border-radius: 8px;
-    margin: 0 auto;
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: visibility 0.3s ease-in, opacity 0.3s ease-out;
+}
+
+.modal_opened {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0;
+}
+
+.add_modal-with-form .modal__label--writing {
+  font-family: "CabinetGrotesk";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #000;
+}
+  
+.add__modal-with-form .modal__container {
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  background: #FFF;
+  width: 496px;
+  height: 436px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.add__modal-with-form .modal__label {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 52px;
+  gap: 8px;
+}
+  
+.add__modal-with-form .modal__form  {
+  display:flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 440px;
+  gap: 20px;
+  height: auto;
+  }
+
+.add__modal-with-form .modal__input {
+  width: 440px;
+  height: 29px;
+  border-width: 1px;
+  border-bottom:#000;
+}
+
+.add__modal-with-form .modal__title  {
+  width: 95px;
+  height: 20px;
+}
+
+.add__modal-with-form .modal__close-btn {
+  display: flex;
+  position: absolute;
+  border-style: none;
+  background-image: url("../assets/modalCloseBtn.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  left: 100%;
+}
+
+.add__modal-with-form .modal__submit-btn {
+  width: 124px;
+  height: 36px;
+  top: 557px;
+  left: 500px;
+  gap: 12px;
+}
+  
+.modal__radio-field {
+  width: 173px;
+  height: 108px;
+}
+
+
+@media screen and (max-width: 720px) {
+  .add__modal-with-form .modal__label--writing {
+    font-family: "CabinetGrotesk";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #000;
+    gap: 10px;
+    width: 325px;
+    height: 250px;
+    border-radius: 4px;
   }
 
   .add__modal-with-form .modal__label {
-    display: flex;
-    flex-direction: column;
-    width: 440px;
+    width: 300px;
     height: 52px;
-    gap: 8px;
+    gap: 4px;
   }
-  
-  .add__modal-with-form .modal__form  {
-    display:flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    width: 440px;
-    gap: 20px;
-    height: auto;
-
+      
+  .add__modal-with-form .modal__form {
+      width: 300px;
+      gap: 10px;
   }
 
   .add__modal-with-form .modal__input {
-    width: 440px;
-    height: 29px;
-    border-width: 1px;
-    border-bottom:#000;
-  }
-
-  .add__modal-with-form .modal__title  {
-    width: 95px;
-    height: 20px;
-  }
-
-  .add__modal-with-form .modal__close-btn {
-    display: flex;
-    position: absolute;
-    border-style: none;
-    background-image: url("../assets/modalCloseBtn.svg");
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    left: 100%;
+      width: 300px;
   }
 
   .add__modal-with-form .modal__submit-btn {
     width: 124px;
     height: 36px;
-    top: 557px;
-    left: 500px;
-    gap: 12px;
+    gap: 6px;
   }
-  
- .modal__radio-field {
-    width: 173px;
-    height: 108px;
-  }
-
-
-  @media screen and (max-width: 720px) {
-    .add__modal-with-form .modal__label--writing {
-        font-family: "CabinetGrotesk";
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 16px;
-        leading-trim: NONE;
-        line-height: 20px;
-        letter-spacing: 0%;
-        color: #000;
-        gap: 10px;
-        width: 325px;
-        height: 250px;
-        border-radius: 4px;
-    }
-
-    .add__modal-with-form .modal__label {
-        width: 300px;
-        height: 52px;
-        gap: 4px;
-    }
       
-    .add__modal-with-form .modal__form {
-        width: 300px;
-        gap: 10px;
-    }
-
-    .add__modal-with-form .modal__input {
-        width: 300px;
-    }
-    
-
-    .add__modal-with-form .modal__submit-btn {
-        width: 124px;
-        height: 36px;
-        gap: 6px;
-    }
-      
-    .modal__radio-field  {
-        width: 90px;
-        height: 75px;
-    }  
-  }
+  .modal__radio-field  {
+    width: 90px;
+    height: 75px;
+  }  
+}

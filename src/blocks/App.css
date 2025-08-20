@@ -14,8 +14,8 @@
 }
 
 .logo {
-  width: 89;
-  height: 40;
+  width: 89px;
+  height: 40px;
   font-family: "CabinetGrotesk";
   font-weight: 900;
   font-style: Black;
@@ -23,15 +23,5 @@
   leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0%;
-}
-
-@media screen and (max-width: 720px) {
-  #root {
-    max-width: 720px;
-  }
-
-  .page {
-    max-width: 720px;
-  }
 }
 

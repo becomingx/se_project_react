@@ -42,6 +42,7 @@
         margin-top: 20px;
         height: 40px;
         border-radius: 4px;
+        width: 326px;
     }
     
     .weather-card__temp {
