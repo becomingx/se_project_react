@@ -1,4 +1,3 @@
-import {openWeatherKey, coordinates} from "./utils/constants.js";
 
 //we’ll only need to extract the:
 // 1.city name and 
@@ -25,9 +24,11 @@ a temperature in Fahrenheit and returns:
 Feel free to adjust the temperature ranges to match your own preferences. 
 */
 
+import {openWeatherKey, coordinates} from "../utils/constants.js";
+
 const getWeather = (coordinates, openWeatherKey) => {
-   return fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${openWeatherKey}`)
-    .then((res) = () => {
+   return fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.latitude}&lon=${coordinates.longitude}&units=imperial&appid=${openWeatherKey}`)
+    .then((res) => {
       if (res.ok) {
         return res.json();
       } else {

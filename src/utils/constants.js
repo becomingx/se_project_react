@@ -1,5 +1,3 @@
-//import WeatherApi from "../utils/WeatherApi.js";
-
 const defaultClothingItems = [
     {
       _id: 0,
@@ -41,7 +39,8 @@ const defaultClothingItems = [
 
 const openWeatherKey = "aaee6ab22aea5619b8be5635b7d26796";
 
-const coordinates = {
+const coordinates = 
+{
   latitude: 35.479980, 
   longitude: -79.180542
 };
