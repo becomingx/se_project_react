@@ -21,8 +21,63 @@ a temperature in Fahrenheit and returns:
 "warm" if it is at least 66 degrees, but less than 86
 "cold" otherwise
 
-Feel free to adjust the temperature ranges to match your own preferences. 
+Feel free to adjust the temperature ranges to match your own preferences.
+
+/*
+ex obj
+(referred to as "data")
+{
+    "coord": {
+        "lon": -79.1805,
+        "lat": 35.48
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+      "main": {
+          "temp": 81.95,
+          "feels_like": 85.32,
+          "temp_min": 81.88,
+          "temp_max": 86.14,
+          "pressure": 1010,
+          "humidity": 65,
+          "sea_level": 1010,
+          "grnd_level": 998
+      },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.61,
+        "deg": 50
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1755813218,
+    "sys": {
+        "type": 1,
+        "id": 6072,
+        "country": "US",
+        "sunrise": 1755772858,
+        "sunset": 1755820741
+    },
+    "timezone": -14400,
+    "id": 4490329,
+    "name": "Sanford",
+    "cod": 200
+}
 */
+
+
+//coord.lat, coord.long
+//main.temp
+//data.name
+
 
 import {openWeatherKey, coordinates} from "../utils/constants.js";
 
@@ -37,4 +92,11 @@ const getWeather = (coordinates, openWeatherKey) => {
     });
 }
 
-export {getWeather};
+const filterWeatherData = (data) => {
+  const result = {};
+  result.city = data.name;
+  result.temp = data.main.temp;
+  return result;
+}
+
+export {getWeather, filterWeatherData};
