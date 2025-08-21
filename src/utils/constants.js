@@ -39,69 +39,15 @@ const defaultClothingItems = [
     }
   ]
 
-  const openWeatherKey = "aaee6ab22aea5619b8be5635b7d26796";
+const openWeatherKey = "aaee6ab22aea5619b8be5635b7d26796";
 
-  /*
-  const apiCall =  new WeatherApi({ 
-    baseUrl: "https://api.openweathermap.org/data/2.5/weather",
-    headers: {
-      authorization: openWeatherKey,
-      "content-Type": "application/json"
-    }
-  });
-  */
-
-//https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}
-
-/*
-
-const headerAvatar = document.querySelector(".profile__avatar");
-const headerUserName = document.querySelector(".profile__name");
-
-const modalWithForm = document.querySelector("#modalWithForm-modal");
-const modalWithFormElement = modalWithForm.querySelector(".modal__form");
-const modalWithFormCloseBtn = modalWithForm.querySelector(".modal__close-btn");
-const modalWithFormNameInput = modalWithForm.querySelector("#name-input");
-const modalWithFormDescriptionInput = modalWithForm.querySelector("#image-description-input");
-const modalWithFormSubmitBtn = modalWithForm.querySelector(".modal__submit-btn");
-
-const itemModal = document.querySelector("#item-modal");
-const itemModalImageElement = itemModal.querySelector(".modal__image");
-const itemModalCloseBtn = itemModal.querySelector(".modal__close-btn");
-const itemModalCaption = itemModal.querySelector(".");
-
-const cardTemplate = document.querySelector("#card-template");
-const cardsList = document.querySelector(".cards__list");*/
-
-/*
-export {
-  //default array of clothing items
-  defaultClothingItems,
-
-  //API key
-  openWeatherKey,
-
-  // header elements
-  headerAvatar,
-  headerUserName,
-
-  // Edit modal
-  modalWithForm,
-  modalWithFormElement,
-  modalWithFormCloseBtn,
-  modalWithFormNameInput,
-  modalWithFormDescriptionInput,
-  modalWithFormSubmitBtn,
-
-  //item modal
-  itemModal,
-  itemModalImageElement,
-  itemModalCloseBtn,
-
-  // Card template and list
-  cardTemplate,
-  cardsList
+const coordinates = {
+  latitude: 35.479980, 
+  longitude: -79.180542
 };
-*/
 
-export {defaultClothingItems, openWeatherKey};
+export {
+  defaultClothingItems, 
+  openWeatherKey,
+  coordinates
+};
