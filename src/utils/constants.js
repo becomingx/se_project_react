@@ -37,6 +37,81 @@ const defaultClothingItems = [
     }
   ]
 
+const weatherCards = [
+  {
+    _id: 1,
+    name: "Day",
+    time: "day",
+    link: "../assets/weather_cards/day.svg"
+  },
+  {
+    _id: 2,
+    name: "Cloudy",
+    time: "day",
+    link: "../assets/weather_cards/sunny.svg"
+  },
+  {
+    _id: 3,
+    name: "Fog",
+    time: "day",
+    link: "../assets/weather_cards/fog.svg"
+  },
+  {
+    _id: 4, 
+    name: "Rain",
+    time: "day",
+    link: "../assets/weather_cards/rain.svg"
+  },
+  {
+    _id: 5,
+    name: "Snow",
+    time: "day",
+    link: "../assets/weather_cards/snow.svg"
+  },
+  {
+    _id: 6,
+    name: "Storm",
+    time: "day",
+    link: "../assets/weather_cards/storm.svg"
+  },
+  {
+    _id: 7,
+    name: "Night",
+    time: "night",
+    link: "../assets/weather_cards/night.svg"
+  },
+  {
+    _id: 8,
+    name: "Cloudy",
+    time: "night",
+    link: "../assets/weather_cards/nightCloudy.svg"
+  },
+  {
+    _id: 9,
+    name: "Fog",
+    time: "night",
+    link: "../assets/weather_cards/nightFog.svg"
+  },
+  {
+    _id: 10,
+    name: "Rain",
+    time: "night",
+    link: "../assets/weather_cards/nightRain.svg"
+  },
+  {
+    _id: 11,
+    name: "Snow",
+    time: "night",
+    link: "../assets/weather_cards/nightSnow.svg"
+  },
+  {
+    _id: 12,
+    name: "Storm",
+    time: "night",
+    link: "../assets/weather_cards/night.svg"
+  },
+]
+
 const openWeatherKey = "aaee6ab22aea5619b8be5635b7d26796";
 
 const coordinates = 
@@ -48,5 +123,6 @@ const coordinates =
 export {
   defaultClothingItems, 
   openWeatherKey,
-  coordinates
+  coordinates,
+  weatherCards
 };
