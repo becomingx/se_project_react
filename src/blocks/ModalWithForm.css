@@ -116,8 +116,29 @@
     color: #FFF;
     border: none;
     border-radius: 4px;
-    background-color:#0000004D;
+    background-color: #000;
+  }
 
+  .modal__submit-btn:hover {
+    opacity: .6;
+    transition-duration: 1s;
+    cursor: pointer;
+  }
+
+  /*
+  .modal__submit-btn:disabled {
+    background-color: #000;
+    opacity: .3;
+  }*/
+
+  /* When radio is checked, style both the radio and label */
+  .radio-group input[type="radio"]:checked {
+    accent-color: black;
+  }
+  
+  .radio-group input[type="radio"]:checked + label {
+    color: black;
+    font-weight: bold;
   }
     
   .modal__radio-fieldset {
@@ -144,6 +165,11 @@
     leading-trim: NONE;
     line-height: 20px;
     letter-spacing: 0%;
+    accent-color: gray;
+  }
+
+  .modal__radio-input:checked {
+    accent-color: black;
   }
 
   .modal__label_radio {
@@ -157,8 +183,17 @@
     font-size: 16px;
     leading-trim: NONE;
     line-height: 20px;
-    letter-spacing: 0%; 
+    letter-spacing: 0%;
+    color: gray;
+    cursor: pointer;
   }
+
+/* Style the parent label when its child input is checked */
+.modal__radio-input:checked + .modal__label_radio,
+.modal__label_radio:has(.modal__radio-input:checked) {
+  color: black;
+  font-weight: bold;
+}
 
   .modal__legend {
     margin-bottom: 10px;
