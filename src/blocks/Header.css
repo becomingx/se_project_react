@@ -23,6 +23,7 @@
 }
 
 .header__logo {
+  display: flex;
   align-self: center;
   width: 89px;
   height: 40px;
@@ -32,7 +33,20 @@
   display: flex;
   justify-content: space-between;
   font-style: Bold;
-  width: auto;
+  gap: 10px;
+  font-family: "CabinetGrotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0;
+  height: 24px;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  font-style: Bold;
   gap: 10px;
   font-family: "CabinetGrotesk";
   font-weight: 700;
@@ -59,21 +73,6 @@
   text-align: left;
   flex-direction: row;
   margin: 0;
-}
-
-.header__user {
-  display: flex;
-  justify-content: space-between;
-  font-style: Bold;
-  width: auto;
-  gap: 10px;
-  font-family: "CabinetGrotesk";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  margin: 0;
-  height: 24px;
 }
 
 .header__add-button {
@@ -113,77 +112,178 @@
   border: 1px;
 }
 
+.header__logo_mobile {
+  display: none;
+  width: 89px;
+  height: 40px;
+}
+
+.mobile__menu,
+.mobile__menu_opened {
+  display: none;
+}
+
+.mobile__menu_close-btn {
+  display: none;
+}
+
+.header__left_mobile {
+  display: none;
+}
+
+.header__right_mobile {
+  display: none;
+}
+
+.header__info_mobile {
+  display: none;
+}
+
+.header__user_mobile {
+  display: none;
+}
+
 @media screen and (max-width: 720px) {
-
 .header {
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  max-width: 343px;
   height: auto;
-  width: 326px;
-  gap: 20px;
-  border-radius: 4px;
-  padding: 0;
-  margin: 0 auto;
 }
 
-.header__left {
-  align-self: flex-start;
-  justify-content: center;
-  width: 326px;
-
-}
-
-.header__right {
-  align-self: flex-start;
-  justify-content: center;
-  width: 326px;
-}
-
-.header__logo {
+.header__left_mobile {
+  display:flex;
+  flex-wrap: wrap;
   align-self: center;
   justify-content: flex-start;
+}
 
+.header__right_mobile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .header__info {
-  justify-content: space-evenly;
+  display: none;
+}
+
+.header__user {
+  display: none;
+}
+
+.header__info_mobile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font-style: Bold;
+  gap: 10px;
+  font-family: "CabinetGrotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  height: auto;
+  width: 343px;
+}
+
+.header__user_mobile {
+  display: flex;
+  justify-content: space-between;
+  font-style: Bold;
+  gap: 10px;
+  font-family: "CabinetGrotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0;
+  height: 24px;
+}
+ 
+.header__logo {
+  display: none;
+}
+
+.header__logo_mobile {
+  display: flex;
+  justify-content: flex-start;
   align-self: center;
-  font-size: 16px;
-  line-height: 16px;
-  width: 326px;
+  width: 89px;
+  height: 40px;
+}
+
+.mobile__menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.mobile__menu_opened {
+  display: flex;
+  width: 343px;
+  height: 208px;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.mobile__menu,
+.mobile__menu_opened {
+  display: flex;
+}
+
+.mobile__menu_close-btn {
+  display: flex;
+  width: 21px;
+  height: 21px;
+  border-radius: 1px;
+  color: #000;
 }
 
 .header__date {
+  text-align: center;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
   text-align: center;
 }
 
 .header__location {
   text-align: center;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-.header__user {
-  justify-content: space-evenly;
-  font-size: 16px;
-  line-height: 16px;
-  width: 326px;
-}
-
-.header__button {
-  text-align: end;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  padding: 0;
-  height: 20px;
-  font-size: 16px;
-  line-height: 16px;
+.header__add-button {
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
 }
 
 .header__user-name {
   align-self: center;
   text-align: right;
-  font-size: 16px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
   margin: 0;
 }
 
