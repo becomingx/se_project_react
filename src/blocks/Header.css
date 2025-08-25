@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   background-color: #f3f3f3;
   max-width: 100%;
@@ -127,11 +128,11 @@
   display: none;
 }
 
-.header__left_mobile {
+.header__top-row {
   display: none;
 }
 
-.header__right_mobile {
+.header__bottom-row {
   display: none;
 }
 
@@ -147,24 +148,26 @@
 
 @media screen and (max-width: 720px) {
 .header {
-  justify-content: space-between;
-  width: 343px;
-  height: 134px;
-}
-
-.header__left_mobile {
-  display:flex;
+  display: flex;
   justify-content: flex-start;
-  flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
-  width: 343px;
-  height: 134px;
+  align-items: flex-end;
+  height: 134px; /* Important for space-between */
+  max-width: 343px;
 }
 
-.header__right_mobile {
+.header__top-row {
   display: flex;
-  width: 44px;
+  justify-content: space-between; /* Logo left, menu right */
+  width: 100%;
+}
+
+.header__bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Logo left, menu right */ 
+  width: 100%;
 }
 
 .header__info {
@@ -177,32 +180,25 @@
 
 .header__info_mobile {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-between;
+  justify-content: space-between;
   font-style: Bold;
   font-family: "CabinetGrotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
-  height: 134px;
-  width: 343px;
+  width: 100%;
 }
 
 .header__user_mobile {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-end;
   font-style: Bold;
   font-family: "CabinetGrotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
-  height: 134px;
 }
  
 .header__logo {
@@ -211,14 +207,13 @@
 
 .header__logo_mobile {
   display: flex;
-  justify-content: flex-start;
+  align-self: flex-start;
   width: 89px;
   height: 40px;
 }
 
 .mobile__menu {
-  display: flex;
-  justify-content: flex-end;
+  display:flex;
   width: 44px;
   height: 44px;
   border-radius: 10px;
@@ -248,13 +243,10 @@
 
 .mobile__header_date-location {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-end;
 }
 
 .header__date {
+  display: flex;
   font-family: "CabinetGrotesk";
   text-align: center;
   font-weight: 700;
@@ -267,6 +259,7 @@
 }
 
 .header__location {
+  display: flex;
   font-family: "CabinetGrotesk";
   text-align: center;
   font-weight: 700;
