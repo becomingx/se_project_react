@@ -50,6 +50,14 @@
         font-size: 18px;
         line-height: 20px;
         margin: 10px;
+        font-family: "CabinetGrotesk";
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 36px;
+        leading-trim: NONE;
+        line-height: 40px;
+        letter-spacing: 0%;
+        vertical-align: middle;
     }
 
     .weather-card__image {

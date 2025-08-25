@@ -143,9 +143,18 @@
   display: none;
 }
 
+.header__info {
+  display: none;
+}
+
+.header__user {
+  display: none;
+}
+
 @media screen and (max-width: 720px) {
 .header {
-  max-width: 343px;
+  justify-content: space-between;
+  width: 343px;
   height: auto;
 }
 
@@ -154,20 +163,12 @@
   flex-wrap: wrap;
   align-self: center;
   justify-content: flex-start;
+  width: 343px;
 }
 
 .header__right_mobile {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.header__info {
-  display: none;
-}
-
-.header__user {
-  display: none;
+  width: 44px;
 }
 
 .header__info_mobile {
@@ -183,21 +184,19 @@
   line-height: 24px;
   letter-spacing: 0%;
   height: auto;
-  width: 343px;
 }
 
 .header__user_mobile {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-end;
   font-style: Bold;
-  gap: 10px;
   font-family: "CabinetGrotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
-  margin: 0;
-  height: 24px;
 }
  
 .header__logo {
@@ -214,7 +213,7 @@
 
 .mobile__menu {
   display: flex;
-  justify-content: flex-end;
+  margin-right: 20px;
   width: 44px;
   height: 44px;
   border-radius: 10px;
