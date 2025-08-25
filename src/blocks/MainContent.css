@@ -36,7 +36,7 @@
 .cards__list-temp--writing {
     display: flex;
     flex-wrap: wrap;
-    align-self: center;
+    text-align: center;
     margin: 0;
     font-weight: 700;
     line-height: 100%;
@@ -50,6 +50,10 @@
 
 
   @media screen and (max-width: 720px) {
+    .content {
+        margin: 20px 0 20px 0;
+    }
+
     .cards__page-section {
         margin: 0px;
     }
@@ -61,18 +65,24 @@
     }
     
     .cards__list-temp {
-        justify-self: center;
-        text-align: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-content: center;
         margin-bottom: 20px;
         margin-top: 20px;
+        width: 340px;
     }
     
     .cards__list-temp--writing {
-        justify-content: center;
         text-align: center;
         font-size: 16px;
-        width: 343px;
-        height: 25px;
+        width: 340px;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
     }
 
   }
