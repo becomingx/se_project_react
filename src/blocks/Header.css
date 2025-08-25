@@ -144,6 +144,13 @@
   display: none;
 }
 
+.mobile__menu_lines-container {
+  display: none;
+}
+
+.mobile__menu_line {
+  display: none;
+}
 
 
 @media screen and (max-width: 720px) {
@@ -153,7 +160,7 @@
   flex-wrap: wrap;
   align-content: space-between;
   align-items: flex-end;
-  height: 134px; /* Important for space-between */
+  height: 118px; /* Important for space-between */
   max-width: 343px;
 }
 
@@ -214,10 +221,29 @@
 
 .mobile__menu {
   display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
   width: 44px;
   height: 44px;
   border-radius: 10px;
   background-color: #FFF;
+}
+
+.mobile__menu_lines-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 28px;
+  height: 12px;
+}
+
+.mobile__menu_line {
+  display: flex;
+  width: 28px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000;
 }
 
 .mobile__menu_opened {
