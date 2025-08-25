@@ -6,8 +6,15 @@
 }
 
 @font-face {
-    font-family: 'CabinetGrotesk';
+    font-family: 'CabinetGrotesk-Bold';
     src: url('./CabinetGrotesk-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-}    
+}
+
+@font-face {
+    font-family: 'CabinetGrotesk-Extrabold';
+    font-weight: 900;
+    font-style: normal;
+    src: url('./CabinetGrotesk-Extrabold.woff') format('woff');
+    }

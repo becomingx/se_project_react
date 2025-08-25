@@ -188,7 +188,6 @@
     cursor: pointer;
   }
 
-/* Style the parent label when its child input is checked */
 .modal__radio-input:checked + .modal__label_radio,
 .modal__label_radio:has(.modal__radio-input:checked) {
   color: black;

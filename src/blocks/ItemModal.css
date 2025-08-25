@@ -120,55 +120,49 @@
 @media screen and (max-width: 720px) {
 
     .item__modal .modal__container {
-        width: 250px;
-        height: 305px;
+        width: 343px;
+        height: 343px;
         gap: 10px;
         border-radius: 8px;
         font-size: 16px;
         line-height: 16px;
     }
+    .modal__text-container {
+        margin-top: 20px;
+        margin-left: 20px;
+        gap: 12px;
+    }
 
     .modal__footer {
-        width: 250px;
-        height: 56px;
+        width: 343px;
+        height: 120px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
     
     .modal__container_type_image {
-        width: 250px;
-        height: 250px;
+        width: 343px;
+        height: 343px;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
 
     .modal__close-btn {
-        top: 12px;
-        right: 12px;
+        background-image: url("../assets/modalCloseBtnMobile.svg");
+        width: 21px;
+        height:  21px;
+        border-radius: 1px;
+        
     }
     
     .modal__image {
         display: flex;
         justify-content: center;
-        width: 250px;
-        height: 250px;
+        width: 343px;
+        height: 343px;
         margin: 0 auto;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-    }
-    
-    .modal__label-container {
-        margin: 16px;
-    }
-    
-    .modal__caption {
-        font-size: 13px;
-        line-height: 16px;
-    }
-    
-    .modal__weather {
-        font-size: 13px;
-        line-height: 16px;
     }
 
 }

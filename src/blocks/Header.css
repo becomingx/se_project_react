@@ -14,6 +14,7 @@
   flex-wrap: wrap;
   align-self: center;
   justify-content: flex-start;
+  margin: 0;
 }
 
 .header__right {
@@ -21,92 +22,84 @@
   flex-wrap: wrap;
   align-self: center;
   justify-content: flex-end;
+  margin: 0;
 }
 
 .header__logo {
-  display: flex;
-  align-self: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
   width: 89px;
   height: 40px;
+  font-family: "CabinetGrotesk-Extrabold";
+  color: Black;
+  font-size: 32px;
+  line-height: 100%;
 }
 
 .header__info {
   display: flex;
-  justify-content: space-between;
-  font-style: Bold;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  font-family: "CabinetGrotesk";
-  font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  margin: 0;
-  height: 24px;
+  height: 40px;
+}
+
+.header__date {
+  flex-wrap: wrap;
+  align-content: flex-end;
+  text-align:left;
+  flex-direction: row;
+  width: auto;
+  height: 40px;
+}
+
+.header__location {
+  flex-wrap: wrap;
+  align-content: flex-end;
+  text-align: left;
+  flex-direction: row;
+  width: auto;
+  height: 40px;
 }
 
 .header__user {
   display: flex;
   justify-content: space-between;
-  font-style: Bold;
   gap: 10px;
-  font-family: "CabinetGrotesk";
-  font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  margin: 0;
-  height: 24px;
-}
-
-.header__date {
-  display: flex;
-  align-items: center;
-  text-align:left;
-  flex-direction: row;
-  width: auto;
-  margin: 0;
-}
-
-.header__location {
-  display: flex;
-  align-items: center;
-  width: auto;
-  text-align: left;
-  flex-direction: row;
-  margin: 0;
+  height: 40px;
 }
 
 .header__add-button {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
   width: auto;
-  height: 24px;
+  height: 40px;
   border: none;
   background-color: #F3f3f3;
-  font-family: "CabinetGrotesk";
-  font-weight: 700;
-  font-style: Bold;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 .header__user-name {
-  display: flex;
-  align-self: center;
-  text-align: center;
-  font-family: "CabinetGrotesk";
-  font-weight: 700;
-  font-style: Bold;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
+  margin: 0;
 }
 
 .header__avatar {
-  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
   align-self: center;
   width: 40px;
   height: 40px;
@@ -185,27 +178,23 @@
   display: none;
 } 
 
+.header__user_mobile {
+  /*TBD*/
+}
+
 .header__info_mobile {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-style: Bold;
-  font-family: "CabinetGrotesk";
-  font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
   width: 100%;
 }
 
-.header__user_mobile {
+.header__date-location_mobile {
   display: flex;
-  font-style: Bold;
-  font-family: "CabinetGrotesk";
-  font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
 }
  
 .header__logo {
@@ -267,62 +256,46 @@
   color: #000;
 }
 
-.mobile__header_date-location {
+.header__date-location_mobile {
+  display: flex;
+  width: auto;
+}
+
+.header__date-location_mobile-content {
+  width: 100%;
   display: flex;
 }
 
 .header__date {
   display: flex;
-  font-family: "CabinetGrotesk";
+  font-family: "CabinetGrotesk-Bold";
   text-align: center;
-  font-weight: 700;
-  font-style: Bold;
   font-size: 20px;
-  leading-trim: NONE;
-  line-height: 24px;
-  letter-spacing: 0%;
   text-align: center;
+  margin: 5px;
 }
 
 .header__location {
   display: flex;
-  font-family: "CabinetGrotesk";
+  font-family: "CabinetGrotesk-Bold";
   text-align: center;
-  font-weight: 700;
-  font-style: Bold;
   font-size: 20px;
-  leading-trim: NONE;
-  line-height: 24px;
-  letter-spacing: 0%;
   text-align: center;
+  margin: 5px;
 }
 
 .header__add-button {
   text-align: center;
   justify-content: center;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 20px;
-  leading-trim: NONE;
-  line-height: 24px;
-  letter-spacing: 0%;
 }
 
 .header__user-name {
   align-self: center;
   text-align: right;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 20px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
-  margin: 0;
 }
 
 .header__avatar {
   align-self: center;
   justify-content: flex-end;
-  border: 1px;
 }
 }
