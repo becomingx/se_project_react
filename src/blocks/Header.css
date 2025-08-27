@@ -321,7 +321,7 @@
   align-content: center;
   flex-direction: column;
   width: auto;
-  height: auto;
+  height: 208px;
   gap: 20px;
 }
 
@@ -362,14 +362,6 @@
   width: 40px;
   height: 40px;
   border-width: 1px;
-}
-
-.mobile__button_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 343px;
-  height: 21px;
 }
 
 .mobile__menu_close-btn {

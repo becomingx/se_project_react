@@ -22,6 +22,18 @@
     background-color: #f3f3f3;
   }
 
+.cards__list_menu-open {
+    display: none;
+    list-style-type: none;
+    justify-content:center;
+    display: grid;
+    margin: 0 auto;
+    gap: 0 20px;
+    grid-template-columns: repeat(auto-fit, 325px);
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
 .cards__list-temp {
     display: flex; 
     justify-content: flex-start;
@@ -31,6 +43,10 @@
     max-width: auto;
     background-color: #F3F3F3;
     font-family: "CabinetGrotesk";
+}
+
+.cards__list-temp_menu-open {
+    display: none;
 }
 
 .cards__list-temp--writing {
@@ -58,29 +74,36 @@
         margin: 0px;
     }
 
+
     .cards__list {
         grid-template-columns: repeat(auto-fit, 325px);
         max-width: 100%;
         margin: 0;
     }
-    
+
+    .cards__list_menu-open {
+        display: flex;
+        padding-top: 20px;
+    }
+
     .cards__list-temp {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
-        margin-top: 32px;
-        width: 340px;
+        margin: 0;
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+
+    .cards__list-temp_menu-open {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding-top: 100px;
     }
     
     .cards__list-temp--writing {
+        font-family: "CabinetGrotesk-Bold";
         font-size: 16px;
-        width: 340px;
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 20px;
-        leading-trim: NONE;
-        line-height: 100%;
-        letter-spacing: 0%;
     }
 
   }
