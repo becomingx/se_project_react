@@ -11,36 +11,31 @@
 
 .header__left {
   display: flex;
-  flex-wrap: wrap;
-  align-self: center;
   justify-content: flex-start;
   margin: 0;
 }
 
 .header__right {
   display: flex;
-  flex-wrap: wrap;
-  align-self: center;
   justify-content: flex-end;
   margin: 0;
 }
 
 .header__logo {
+  display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
   width: 89px;
   height: 40px;
   font-family: "CabinetGrotesk-Extrabold";
   color: Black;
   font-size: 32px;
-  line-height: 100%;
+  margin-right: 24px;
 }
 
 .header__info {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
   height: 40px;
@@ -48,8 +43,7 @@
 
 .header__date {
   flex-wrap: wrap;
-  align-content: flex-end;
-  text-align:left;
+  align-content: center;
   flex-direction: row;
   width: auto;
   height: 40px;
@@ -57,8 +51,7 @@
 
 .header__location {
   flex-wrap: wrap;
-  align-content: flex-end;
-  text-align: left;
+  align-content: center;
   flex-direction: row;
   width: auto;
   height: 40px;
@@ -67,7 +60,6 @@
 .header__user {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
   height: 40px;
@@ -76,31 +68,31 @@
 .header__add-button {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
-  justify-content: flex-end;
+  align-content: center;
+  justify-content: center;
   width: auto;
   height: 40px;
   border: none;
   background-color: #F3f3f3;
   font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  margin: 0;
   padding: 0;
+  margin-right: 20px;
 }
 
 .header__user-name {
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-content: flex-end;
+  align-content: center;
   font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
-  margin: 0;
+  margin-right: 12px;
 }
 
 .header__avatar {
-  flex-wrap: wrap;
-  align-content: flex-end;
-  align-self: center;
+  display: flex;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border: 1px;
@@ -354,11 +346,13 @@
 
 .header__user-name_mobile {
   display: flex;
-  justify-self: center;
+  flex-wrap: wrap;
+  align-content: center;
   font-family: "CabinetGrotesk-Bold";
   font-size: 20px;
   width: auto;
-  height: 25px;
+  height: auto;
+  margin: 0;
 }
 
 .header__avatar_mobile {
