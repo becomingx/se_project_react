@@ -133,10 +133,6 @@
   display: none;
 }
 
-.header__user_mobile {
-  display: none;
-}
-
 .mobile__menu_lines-container {
   display: none;
 }
@@ -145,28 +141,57 @@
   display: none;
 }
 
+.mobile__menu_content {
+  display: none;
+}
+
+.header__add-button_mobile {
+  display: none;
+}
+
+.header__user-name_mobile {
+  display: none;
+}
+
+.mobile__menu_content {
+  display: none;
+}
+
+.header__avatar_mobile {
+  display: none;
+}
+
+.mobile__menu_top-row {
+  display: none;
+}
+
+.mobile__menu_bottom-row {
+  display: none;
+}
+
 
 @media screen and (max-width: 720px) {
+  
 .header {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: space-between;
   align-items: flex-end;
-  height: 118px; /* Important for space-between */
+  height: 118px;
   max-width: 343px;
 }
 
 .header__top-row {
   display: flex;
-  justify-content: space-between; /* Logo left, menu right */
+  justify-content: space-between;
   width: 100%;
 }
 
 .header__bottom-row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start; /* Logo left, menu right */ 
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -177,10 +202,6 @@
 .header__user {
   display: none;
 } 
-
-.header__user_mobile {
-  /*TBD*/
-}
 
 .header__info_mobile {
   display: flex;
@@ -206,54 +227,6 @@
   align-self: flex-start;
   width: 89px;
   height: 40px;
-}
-
-.mobile__menu {
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background-color: #FFF;
-}
-
-.mobile__menu_lines-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  width: 28px;
-  height: 12px;
-}
-
-.mobile__menu_line {
-  display: flex;
-  width: 28px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: #000;
-}
-
-.mobile__menu_opened {
-  display: flex;
-  width: 343px;
-  height: 208px;
-  border-width: 1px;
-  border-radius: 10px;
-}
-
-.mobile__menu,
-.mobile__menu_opened {
-  display: flex;
-}
-
-.mobile__menu_close-btn {
-  display: flex;
-  width: 21px;
-  height: 21px;
-  border-radius: 1px;
-  color: #000;
 }
 
 .header__date-location_mobile {
@@ -297,5 +270,113 @@
 .header__avatar {
   align-self: center;
   justify-content: flex-end;
+}
+
+.mobile__menu {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.mobile__menu,
+.mobile__menu_opened {
+  display: flex;
+}
+
+.mobile__menu_lines-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 28px;
+  height: 12px;
+}
+
+.mobile__menu_line {
+  display: flex;
+  width: 28px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000;
+}
+
+.mobile__menu_opened {
+  display: flex;
+  justify-content: center;
+  width: 343px;
+  height: 208px;
+  background-color: #FFF;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.mobile__menu_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  gap: 20px;
+}
+
+.mobile__menu_top-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+
+.mobile__menu_bottom-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25px;
+}
+
+.header__add-button_mobile {
+  display: flex;
+  width: auto;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 25px;
+  font-size: 20px;
+}
+
+.header__user-name_mobile {
+  display: flex;
+  justify-self: center;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 20px;
+  width: auto;
+  height: 25px;
+}
+
+.header__avatar_mobile {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-width: 1px;
+}
+
+.mobile__button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 343px;
+  height: 21px;
+}
+
+.mobile__menu_close-btn {
+  display: flex;
+  width: 21px;
+  height: 21px;
+  border-radius: 1px;
+  color: #000;
 }
 }
