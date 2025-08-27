@@ -169,6 +169,10 @@
   display: none;
 }
 
+.mobile__menu-btn {
+  display: none;
+}
+
 
 @media screen and (max-width: 720px) {
   
@@ -306,23 +310,22 @@
 
 .mobile__menu_opened {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 343px;
   height: 208px;
   background-color: #FFF;
   border-width: 1px;
   border-radius: 10px;
+  padding: 11px;
 }
 
 .mobile__menu_content {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  flex-direction: column;
-  width: auto;
-  height: 208px;
-  gap: 20px;
+  width: 100%;
+  height: auto;
+  gap: 24px;
 }
 
 .mobile__menu_top-row {
@@ -330,6 +333,7 @@
   justify-content: center;
   width: 100%;
   height: 40px;
+  gap: 12px;
 }
 
 .mobile__menu_bottom-row {
@@ -364,11 +368,29 @@
   border-width: 1px;
 }
 
+.mobile__menu-btn {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  height: 208px;
+  width: 21px;
+}
+
 .mobile__menu_close-btn {
   display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  border-style: none;
+  background-image: url("../assets/modalCloseBtnMobile.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  color: #000;
   width: 21px;
   height: 21px;
-  border-radius: 1px;
-  color: #000;
+  left: 300px;
+
 }
 }

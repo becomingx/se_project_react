@@ -94,11 +94,12 @@
         padding-bottom: 20px;
     }
 
+
     .cards__list-temp_menu-open {
         display: flex;
         justify-content: center;
         margin: 0;
-        padding-top: 100px;
+        padding-top: 120px;
     }
     
     .cards__list-temp--writing {
