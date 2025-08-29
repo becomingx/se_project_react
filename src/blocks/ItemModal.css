@@ -57,17 +57,18 @@
     display: flex;
     border-style: none;
     position: absolute;
-    background-image: url("../assets/modalCloseBtn.svg");
+    background-image: url("../assets/modalCloseBtnWhite.svg");
     background-color: transparent;
+    color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    padding: 0;
     width: 20px;
     height: 20px;
     top: 24px;
     right: 24px;
-
 }
 
 .modal__footer {
@@ -95,25 +96,17 @@
 }
 
 .modal__caption {
-    font-family: "CabinetGrotesk";
+    font-family: "CabinetGrotesk-Bold";
     margin: 0;
-    font-weight: 700;
-    font-style: Bold;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 24px;
-    letter-spacing: 0%;
 }
 
 .modal__weather {
-    font-family: "CabinetGrotesk";
+    font-family: "CabinetGrotesk-Bold";
     margin: 0;
-    font-weight: 700;
-    font-style: Bold;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 24px;
-    letter-spacing: 0%;
 }
 
 
@@ -148,10 +141,11 @@
     }
 
     .modal__close-btn {
-        background-image: url("../assets/modalCloseBtnMobile.svg");
         width: 21px;
         height:  21px;
         border-radius: 1px;
+        top: 12px;
+        right: 13px;
         
     }
     

@@ -8,11 +8,7 @@
     width: 325px;
     margin-bottom: 20px;
     font-family: "CabinetGrotesk";
-    font-weight: 700;
-    font-style: Bold;
     font-size: 16px;
-    leading-trim: NONE;
-    line-height: 20px;
     border: #0000004D;
     border-width: 1px;
     border-style:solid;
@@ -30,13 +26,8 @@
     width: 73px;
     height: 24px;
     border-radius: 4px;
-    font-family: "CabinetGrotesk";
-    font-weight: 700;
-    font-style: Bold;
+    font-family: "CabinetGrotesk-Bold";
     font-size: 16px;
-    leading-trim: NONE;
-    line-height: 20px;
-    letter-spacing: 0%;
     background-color: #FFF;
     color: #00000099;
 }
@@ -60,21 +51,22 @@
     visibility: visible;
 }
 
+.card__label {
+    font-size: 16px;
+    line-height: 16px;
+    width: 74px;
+    height: 24px; 
+  }
+
 
 @media screen and (max-width: 720px) {  
     .card {
-        height: 323px;
-        width: 325px;
+        height: 164px;
+        width: 164px;
     }
   
     .card__image {
-        height: 323px;
-        width: 325px;
+        height: 164px;
+        width: 164px;
     }
-  
-    .card__label {
-      font-size: 16px;
-      line-height: 16px;
-    }
-
 }

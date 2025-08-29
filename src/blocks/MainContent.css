@@ -1,8 +1,8 @@
 .content {
     max-width: 100%;
+    height: 100vh;
     background-color: #f3f3f3;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 33px 0 33px 0;
 }
 
 .cards__page-section {
@@ -17,7 +17,7 @@
     display: grid;
     margin: 0 auto;
     gap: 0 20px;
-    grid-template-columns: repeat(auto-fit, 325px);
+    grid-template-columns: repeat(auto-fit, 323px);
     padding: 0;
     background-color: #f3f3f3;
   }
@@ -29,7 +29,7 @@
     display: grid;
     margin: 0 auto;
     gap: 0 20px;
-    grid-template-columns: repeat(auto-fit, 325px);
+    grid-template-columns: repeat(auto-fit, 323px);
     padding: 0;
     background-color: #f3f3f3;
 }
@@ -38,11 +38,11 @@
     display: flex; 
     justify-content: flex-start;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     border-radius: 4px;
     max-width: auto;
     background-color: #F3F3F3;
-    font-family: "CabinetGrotesk";
+    font-family: "CabinetGrotesk-Bold";
 }
 
 .cards__list-temp_menu-open {
@@ -50,19 +50,11 @@
 }
 
 .cards__list-temp--writing {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    font-family: "CabinetGrotesk-Bold";
     margin: 0;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0%;
     font-size: 20px;
-    font-style: Bold;      
-    leading-trim: NONE;
     color: #000;  
 }
-
 
 
   @media screen and (max-width: 720px) {
@@ -71,12 +63,11 @@
     }
 
     .cards__page-section {
-        margin: 0px;
     }
 
 
     .cards__list {
-        grid-template-columns: repeat(auto-fit, 325px);
+        grid-template-columns: repeat(auto-fit, 164px);
         max-width: 100%;
         margin: 0;
     }
@@ -88,12 +79,9 @@
 
     .cards__list-temp {
         display: flex;
-        justify-content: center;
-        margin: 0;
-        padding-top: 32px;
-        padding-bottom: 20px;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
-
 
     .cards__list-temp_menu-open {
         display: flex;
@@ -101,10 +89,4 @@
         margin: 0;
         padding-top: 120px;
     }
-    
-    .cards__list-temp--writing {
-        font-family: "CabinetGrotesk-Bold";
-        font-size: 16px;
-    }
-
   }

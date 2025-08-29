@@ -32,59 +32,35 @@
     font-weight: 500;
     font-style: Medium;
     font-size: 16px;
-    leading-trim: NONE;
-    line-height: 20px;
-    letter-spacing: 0%;
 }
 
 .footer__year {
     font-weight: 500;
     font-style: Medium;
     font-size: 16px;
-    leading-trim: NONE;
-    line-height: 20px;
-    letter-spacing: 0%;
 }
 
 @media screen and (max-width: 720px) {
     .footer {
+        justify-content: space-between;
         margin-top: 20px;
         border-radius: 4px;
         max-width: 100%;
-        flex-direction: column;
         margin: 0;
         gap: 10px;
     }
     
     .footer__left {
-        justify-content: center;
         height: 20px;
         width: 204px;
         font-family: "CabinetGrotesk";
+        font-size: 16px;
     }
     
     .footer__right {
-        justify-content: center;
         height: 20px;
         width: 38px;
         font-family: "CabinetGrotesk";
-    }
-    
-    .footer__name {
-        font-weight: 500;
-        font-style: Medium;
         font-size: 16px;
-        leading-trim: NONE;
-        line-height: 20px;
-        letter-spacing: 0%;
-    }
-    
-    .footer__year {
-        font-weight: 500;
-        font-style: Medium;
-        font-size: 16px;
-        leading-trim: NONE;
-        line-height: 20px;
-        letter-spacing: 0%;
     }
 }
