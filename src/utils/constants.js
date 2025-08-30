@@ -39,79 +39,68 @@ const defaultClothingItems = [
 
 const weatherCards = [
   {
-    _id: 1,
-    name: "Day",
-    time: "day",
-    link: "../assets/weather_cards/day.svg"
+    day: true,
+    condition: "clear",
+    url: new URL("../assets/day/clear.svg", import.meta.url).href,
+  },
+  {    
+    day: true,
+    condition: "clouds",
+    url: new URL("../assets/day/clouds.svg", import.meta.url).href,
   },
   {
-    _id: 2,
-    name: "Cloudy",
-    time: "day",
-    link: "../assets/weather_cards/sunny.svg"
+    day: true,
+    condition: ["fog", "mist"],
+    url: new URL("../assets/day/fog.svg", import.meta.url).href,
   },
   {
-    _id: 3,
-    name: "Fog",
-    time: "day",
-    link: "../assets/weather_cards/fog.svg"
+    day: true,
+    condition: "rain",
+    url: new URL("../assets/day/rain.svg", import.meta.url).href,
   },
   {
-    _id: 4, 
-    name: "Rain",
-    time: "day",
-    link: "../assets/weather_cards/rain.svg"
+    day: true,
+    condition: "rain",
+    url: new URL("../assets/day/rain.svg", import.meta.url).href,
   },
   {
-    _id: 5,
-    name: "Snow",
-    time: "day",
-    link: "../assets/weather_cards/snow.svg"
+    day: true,
+    condition: "thunderstorm",
+    url: new URL("../assets/day/thunderstorm.svg", import.meta.url).href,
   },
   {
-    _id: 6,
-    name: "Storm",
-    time: "day",
-    link: "../assets/weather_cards/storm.svg"
+    day: false,
+    condition: "clear",
+    url: new URL("../assets/night/nightClear.svg", import.meta.url).href,
   },
   {
-    _id: 7,
-    name: "Night",
-    time: "night",
-    link: "../assets/weather_cards/night.svg"
+    day: false,
+    condition: "clouds",
+    url: new URL("../assets/night/nightClouds.svg", import.meta.url).href,
   },
   {
-    _id: 8,
-    name: "Cloudy",
-    time: "night",
-    link: "../assets/weather_cards/nightCloudy.svg"
+    day: false,
+    condition: ["fog", "mist"],
+    url: new URL("../assets/night/nightFog.svg", import.meta.url).href,
   },
   {
-    _id: 9,
-    name: "Fog",
-    time: "night",
-    link: "../assets/weather_cards/nightFog.svg"
+    day: false,
+    condition: "rain",
+    url: new URL("../assets/night/nightRain.svg", import.meta.url).href,
   },
   {
-    _id: 10,
-    name: "Rain",
-    time: "night",
-    link: "../assets/weather_cards/nightRain.svg"
+    day: false,
+    condition: "snow",
+    url: new URL("../assets/night/nightSnow.svg", import.meta.url).href,
   },
   {
-    _id: 11,
-    name: "Snow",
-    time: "night",
-    link: "../assets/weather_cards/nightSnow.svg"
+    day: false,
+    condition: "thunderstorm",
+    url: new URL("../assets/night/nightThunderstorm.svg", import.meta.url).href,
   },
-  {
-    _id: 12,
-    name: "Storm",
-    time: "night",
-    link: "../assets/weather_cards/night.svg"
-  },
-]
+];
 
+//not a sensitive API Key, OK to store here
 const openWeatherKey = "aaee6ab22aea5619b8be5635b7d26796";
 
 const coordinates = 
