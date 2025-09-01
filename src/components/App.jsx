@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-import MainContent from "./MainContent.jsx";
+import Main from "./Main.jsx";
 import ModalWithForm from "./ModalWithForm.jsx";
 import ItemModal from "./ItemModal.jsx";
 import {getWeather, filterWeatherData, getWeatherType} from "../utils/WeatherApi.js"
@@ -62,7 +62,7 @@ const App = () => {
           handleMobileMenu= {handleMobileMenu}
         />
 
-        <MainContent 
+        <Main 
           weatherData= {weatherData}
           handleCardClick= {handleCardClick}
           menu= {mobileMenuOpen}

@@ -3,7 +3,7 @@ import WeatherCard from "./WeatherCard.jsx";
 import {defaultClothingItems, weatherCards} from "../utils/constants.js";
 import ItemCard from "./ItemCard.jsx";
 
-const MainContent = ({menu, weatherData, handleCardClick}) => {
+const Main = ({menu, weatherData, handleCardClick}) => {
 
     return (
       
@@ -39,4 +39,4 @@ const MainContent = ({menu, weatherData, handleCardClick}) => {
     );
   };
 
-export default MainContent;
+export default Main;
