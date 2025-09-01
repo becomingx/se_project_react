@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 import {weatherCards} from "../utils/constants.js";
 
 const WeatherCard = ({temp, weatherData}) => {

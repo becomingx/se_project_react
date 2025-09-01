@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 
 const ItemCard = ({item, onCardClick}) => {
     return (

@@ -1,5 +1,4 @@
 import React from 'react'
-import './index.css'
 import WeatherCard from "./WeatherCard.jsx";
 import {defaultClothingItems, weatherCards} from "../utils/constants.js";
 import ItemCard from "./ItemCard.jsx";

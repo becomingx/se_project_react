@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../assets/Logo.svg";
 import avatar from "../assets/AvatarFalse.svg";
-import "./index.css";
 
 const Header = ({onClick, weatherData, menu, handleMobileMenu}) => {
     const currentDate = new Date().toLocaleString('default', 

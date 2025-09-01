@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './components/App.jsx'
-import './components/index.css'
+import './index.css'
 
 /*
 Entry point → main.jsx
