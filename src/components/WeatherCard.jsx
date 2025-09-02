@@ -1,5 +1,6 @@
 import React from "react";
 import {weatherCards} from "../utils/constants.js";
+import '../blocks/WeatherCard.css';
 
 const WeatherCard = ({temp, weatherData}) => {
     const weatherCardsFilter = weatherCards.filter((card) => {

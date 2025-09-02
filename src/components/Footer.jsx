@@ -1,4 +1,5 @@
 import React from "react";
+import '../blocks/Footer.css';
 
 const Footer = () => {
     const authorName = "Patricia Tirado";

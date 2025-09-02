@@ -1,4 +1,5 @@
 import React from "react";
+import '../blocks/ItemModal.css';
 
 
 const ItemModal = ({activeModal, onClose, card}) => {

@@ -2,6 +2,7 @@ import React from 'react'
 import WeatherCard from "./WeatherCard.jsx";
 import {defaultClothingItems, weatherCards} from "../utils/constants.js";
 import ItemCard from "./ItemCard.jsx";
+import '../blocks/MainContent.css';
 
 const Main = ({menu, weatherData, handleCardClick}) => {
 

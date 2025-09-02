@@ -1,4 +1,5 @@
 import React from "react";
+import '../blocks/ModalWithForm.css';
 
 //TODO
 //radio button, form submit functionality

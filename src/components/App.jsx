@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-import Main from "./Main.jsx";
+import Main from "./MainContent.jsx";
 import ModalWithForm from "./ModalWithForm.jsx";
 import ItemModal from "./ItemModal.jsx";
 import {getWeather, filterWeatherData, getWeatherType} from "../utils/WeatherApi.js"
 import {coordinates, openWeatherKey, weatherCards} from "../utils/constants.js"
+import '../blocks/App.css';
+
 /*
 TBD
 weather card dynamic changing pictures
