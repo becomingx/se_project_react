@@ -8,16 +8,16 @@ const Main = ({menu, weatherData, defaultClothingItems, handleCardClick}) => {
 
     return (
       
-      <main className= "content">
+      <main className="content">
         {!menu &&
           (<WeatherCard
             weatherData = {weatherData}
             weatherCards = {weatherCards} 
             temp= {weatherData.temp}/>)
         }
-        <section className= "cards__page-section"> 
+        <section className="cards__page-section"> 
 
-          <div className= {menu ? "cards__list-temp_menu-open" : "cards__list-temp"}>
+          <div className={menu ? "cards__list-temp_menu-open" : "cards__list-temp"}>
             <p className="cards__list-temp--writing">Today is {weatherData.temp} &deg; F / You may want to wear:</p>
           </div>
 

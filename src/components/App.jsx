@@ -56,7 +56,7 @@ const App = () => {
   
   return (
     <>
-      <div className= "page">
+      <div className="page">
         <Header
           onClick= {handleAddClick}
           menu= {mobileMenuOpen}

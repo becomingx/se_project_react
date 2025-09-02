@@ -4,7 +4,7 @@ import '../blocks/ItemCard.css';
 const ItemCard = ({item, onCardClick}) => {
     return (
         <li className="card">
-            <h2 className= "card__name">{item.name}</h2>
+            <h2 className="card__name">{item.name}</h2>
             <img 
                 onClick= {() => {
                     onCardClick(item);

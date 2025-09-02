@@ -4,7 +4,7 @@ import '../blocks/ItemModal.css';
 
 const ItemModal = ({activeModal, onClose, card}) => {
     return (
-        <div className= {`modal ${activeModal === "item__modal" && "modal_opened"}`}>
+        <div className={`modal ${activeModal === "item__modal" && "modal_opened"}`}>
             <div className="item__modal modal__container">
                 <div className="modal__container_type_image"> 
                 <button 
@@ -12,7 +12,7 @@ const ItemModal = ({activeModal, onClose, card}) => {
                     className="modal__close-btn"
                     onClick={onClose}
                 ></button>                                                 
-                    <img src={card.link} alt="" className="modal__image"/>
+                    <img src={card.link} alt={card.name} className="modal__image"/>
                 </div>
                 <div className="modal__footer">
                     <div className="modal__text-container">

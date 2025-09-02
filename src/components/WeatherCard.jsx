@@ -11,9 +11,9 @@ const WeatherCard = ({temp, weatherData}) => {
 
     const weatherCardUrl = weatherCardsFilter[0]?.url;
     return (
-        <section className="weather-card">
-            <p className="weather-card__temp"> {temp} &deg; F</p>
-            <img src= {weatherCardUrl} alt="Weather Image" className="weather-card__image"/>    
+        <section className="weather__card">
+            <p className="weather__card--temp"> {temp} &deg; F</p>
+            <img src= {weatherCardUrl} alt={weatherData.condition} className="weather-card__image"/>    
         </section>
     );
 

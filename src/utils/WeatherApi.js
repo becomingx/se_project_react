@@ -6,7 +6,7 @@ const getWeather = (coordinates, openWeatherKey) => {
       if (res.ok) {
         return res.json();
       } else {
-        Promise.reject(`Error: ${res.status}`);
+        return Promise.reject(`Error: ${res.status}`);
       }
     });
 }

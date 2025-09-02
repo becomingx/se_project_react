@@ -7,7 +7,7 @@ import '../blocks/ModalWithForm.css';
 const ModalWithForm = ({title, buttonText, activeModal, onClose}) => {
     
     return (
-        <div className= {`modal ${activeModal === "add__modal-with-form" && "modal_opened"}`}>
+        <div className={`modal ${activeModal === "add__modal-with-form" && "modal_opened"}`}>
 
                 <div className="add__modal_content">
                     <h2 className="modal__title">{title}</h2>
@@ -35,7 +35,7 @@ const ModalWithForm = ({title, buttonText, activeModal, onClose}) => {
                         >Image {""}
                             <input 
                                 type= "url" 
-                                className= "modal__input"
+                                className="modal__input"
                                 id="image-url" 
                                 placeholder="Image" 
                             />
@@ -50,6 +50,7 @@ const ModalWithForm = ({title, buttonText, activeModal, onClose}) => {
                             <input
                                 type="radio"
                                 className="modal__radio-input"
+                                value="hot"
                                 id="hot"
                                 name="temp"
                             />
@@ -61,6 +62,7 @@ const ModalWithForm = ({title, buttonText, activeModal, onClose}) => {
                             <input
                                 type="radio"
                                 className="modal__radio-input"
+                                value="warm"
                                 id="warm"
                                 name="temp"
                             />
@@ -72,6 +74,7 @@ const ModalWithForm = ({title, buttonText, activeModal, onClose}) => {
                             <input
                                 type="radio"
                                 className="modal__radio-input"
+                                value="cold"
                                 id="cold"
                                 name="temp"
                             />
