@@ -7,16 +7,16 @@ import ItemModal from "./ItemModal.jsx";
 import {getWeather, filterWeatherData, getWeatherType} from "../utils/WeatherApi.js"
 import {coordinates, openWeatherKey, weatherCards} from "../utils/constants.js"
 import '../blocks/App.css';
+import {defaultClothingItems} from "../utils/clothingItems.js";
 
 /*
 TBD
-weather card dynamic changing pictures
 data validation
 */
 
 
 const App = () => {
-
+  const [clothingItems, setClothingItems] = useState(defaultClothingItems);
   const [mobileMenuOpen, toggleMobileMenu] = useState(false);
   const [weatherData, setWeatherData] = useState(
     {
@@ -37,7 +37,7 @@ const App = () => {
     }) 
     .catch(console.error);
 }, []);
-      
+    
   const handleMobileMenu = () => {
     toggleMobileMenu(!mobileMenuOpen);
   }
@@ -53,7 +53,7 @@ const App = () => {
     setActiveModal("item__modal");
     setSelectedCard(card);
   }
-
+  
   return (
     <>
       <div className= "page">
@@ -64,7 +64,8 @@ const App = () => {
           handleMobileMenu= {handleMobileMenu}
         />
 
-        <Main 
+        <Main
+          defaultClothingItems = {defaultClothingItems} 
           weatherData= {weatherData}
           handleCardClick= {handleCardClick}
           menu= {mobileMenuOpen}
