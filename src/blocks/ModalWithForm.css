@@ -19,7 +19,7 @@
   transition-delay: 0;
 }
 
-.add__modal-with-form  {
+.add__modal-with-form {
   font-family: "CabinetGrotesk-Bold";
   font-size: 16px;
   line-height: 20px;
@@ -29,172 +29,171 @@
   border-radius: 20px;
 }
 
-.add__modal_content {    
+.add__modal_content {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   position: relative;
   width: 496px;
-  height: 436px;
-  background-color: #FFF;
+  height: auto;
+  background-color: #fff;
   border-radius: 20px;
   padding: 28px 28px 36px;
   margin: 0 auto;
-  }
+}
 
-  .modal__title {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0;
-    width: auto;
-    height: auto;
-    font-family: "CabinetGrotesk-Bold";
-    font-size: 16px;
-    line-height: 20px; 
-  }
+.modal__title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  width: auto;
+  height: auto;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  line-height: 20px;
+}
 
-  .add__modal_close-btn {
-    display: flex;
-    position: absolute;
-    border-style: none;
-    background-image: url("../assets/modalCloseBtn.svg");
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    padding: 0;
-    opacity: .3;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    right: 28px;
-  }
+.add__modal_close-btn {
+  display: flex;
+  position: absolute;
+  border-style: none;
+  background-image: url("../assets/modalCloseBtn.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 28px;
+}
 
-  .add__modal_close-btn:hover {
-    opacity: 1;
-    transition-duration: 1s;
-    cursor: pointer;
-  }
+.add__modal_close-btn:hover {
+  opacity: 1;
+  transition-duration: 1s;
+  cursor: pointer;
+}
 
-  .modal__form  {
-    display:flex;
-    flex-direction: column; 
-    width: auto;
-    height: auto;
-    margin-top: 24px;
-    gap: 24px;
-  }
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-top: 24px;
+  gap: 24px;
+}
 
-  .modal__label {
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
-    width:auto;
-    height: 52px;
-    gap: 8px;
-    font-family: "CabinetGrotesk-Bold";
-    font-size: 16px;
-    line-height: 20px;
-  }
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  width: auto;
+  height: 52px;
+  gap: 8px;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  line-height: 20px;
+}
 
-  .modal__input {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: 24px;
-    border: none;
-    border-bottom: 1px solid #000;
-    font-family: "CabinetGrotesk-Bold";
-    font-size: 16px;
-    line-height: 20px;
-  }
+.modal__input {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 24px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  line-height: 20px;
+}
 
-  .modal__submit-btn {
-    text-align: center;
-    width: 124px;
-    height: 36px;
-    font-family: "CabinetGrotesk-Bold";
-    font-size: 16px;
-    line-height: 20px;
-    background-color: #000;
-    color: #FFF;
-    opacity: .3;
-    border: none;
-    border-radius: 4px;
-  }
+.modal__submit-btn {
+  text-align: center;
+  width: 124px;
+  height: 36px;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.3;
+  border: none;
+  border-radius: 4px;
+}
 
-  .modal__submit-btn:hover {
-    opacity: 1;
-    transition-duration: 1s;
-    cursor: pointer;
-  }
+.modal__submit-btn:hover {
+  opacity: 1;
+  transition-duration: 1s;
+  cursor: pointer;
+}
 
-  /* When radio is checked, style both the radio and label */
-  .radio-group input[type="radio"]:checked {
-    accent-color: black;
-  }
-  
-  .radio-group input[type="radio"]:checked + label {
-    color: black;
-    font-weight: bold;
-  }
-    
-  .modal__radio-fieldset {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: none;
-    gap: 8px;
-    padding: 0;
-    margin: 24px 0 32px 0;
-    width: 173px;
-    height: 108px;
-  }
+/* When radio is checked, style both the radio and label */
+.radio-group input[type="radio"]:checked {
+  accent-color: black;
+}
 
-  .modal__radio-input {
-    display: flex;
-    margin-right: 8px;
-    font-family: "CabinetGrotesk-Bold";
-    height: auto;
-    font-size: 16px;
-    line-height: 20px;
-    accent-color: gray;
-  }
-
-  .modal__radio-input:checked {
-    accent-color: black;
-  }
-
-  .modal__label_radio {
-    display: flex;
-    width: 50px;
-    height: 20px;
-    border: 1px;
-    font-family: "CabinetGrotesk-Bold";
-    font-size: 16px;
-    line-height: 20px;
-    color: gray;
-    cursor: pointer;
-  }
-
-  .modal__radio-input:checked + .modal__label_radio,
-  .modal__label_radio:has(.modal__radio-input:checked) {
+.radio-group input[type="radio"]:checked + label {
   color: black;
   font-weight: bold;
 }
 
-  .modal__legend {
-    margin-bottom: 10px;
-    font-family: "CabinetGrotesk-Bold";
-    font-size: 16px;
-    line-height: 20px;
-  }
+.modal__radio-fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+  gap: 8px;
+  padding: 0;
+  margin: 0 0 8px 0;
+  width: 173px;
+  height: 108px;
+}
 
+.modal__radio-input {
+  display: flex;
+  margin-right: 8px;
+  font-family: "CabinetGrotesk-Bold";
+  height: auto;
+  font-size: 16px;
+  line-height: 20px;
+  accent-color: gray;
+}
+
+.modal__radio-input:checked {
+  accent-color: black;
+}
+
+.modal__label_radio {
+  display: flex;
+  width: 50px;
+  height: 20px;
+  border: 1px;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.modal__radio-input:checked + .modal__label_radio,
+.modal__label_radio:has(.modal__radio-input:checked) {
+  color: black;
+  font-weight: bold;
+}
+
+.modal__legend {
+  margin-bottom: 10px;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  line-height: 20px;
+}
 
 @media screen and (max-width: 720px) {
-  .add__modal-with-form  {
+  .add__modal-with-form {
     font-family: "CabinetGrotesk-Bold";
     font-size: 16px;
     border-radius: 4px;
@@ -207,7 +206,7 @@
     position: relative;
     width: auto;
     height: auto;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 20px;
     padding: 32px 16px 32px 16px;
     margin: 0;
@@ -218,13 +217,13 @@
     top: 20px;
     right: 21px;
   }
-  
+
   .modal__label {
     width: auto;
     height: 52px;
     gap: 4px;
   }
-      
+
   .modal__form {
     width: auto;
     gap: 10px;
@@ -244,9 +243,9 @@
     font-size: 16px;
     margin-bottom: 12px;
   }
-      
-  .modal__radio-fieldset  {
+
+  .modal__radio-fieldset {
     width: auto;
     height: auto;
-  }  
+  }
 }

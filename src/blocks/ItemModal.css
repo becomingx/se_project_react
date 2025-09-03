@@ -1,162 +1,156 @@
 .modal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: visibility 0.3s ease-in, opacity 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: visibility 0.3s ease-in, opacity 0.3s ease-out;
 }
 
 .modal_opened {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0;
 }
-  
+
 .item__modal .modal__container {
-    display:flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    background-color: #FFF;
-    margin: 0 auto;
-    width: 498px;
-    height: 610px;
-    gap: 20px;
-    border-radius: 16px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 498px;
+  height: 610px;
+  gap: 20px;
+  border-radius: 16px;
 }
 
 .modal__container_type_image {
-    display: flex;
-    position: relative;
-    width: 498px;
-    height: 498px;
-    background-color: #FFF;
-    margin: 0 auto;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+  display: flex;
+  position: relative;
+  width: 498px;
+  height: 498px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .modal__image {
-    display: flex;
-    justify-content: center;
-    width: 498px;
-    height: 498px;
-    margin: 0 auto;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-
+  display: flex;
+  justify-content: center;
+  width: 498px;
+  height: 498px;
+  margin: 0 auto;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .modal__close-btn {
-    display: flex;
-    border-style: none;
-    position: absolute;
-    background-image: url("../assets/modalCloseBtnWhite.svg");
-    background-color: transparent;
-    color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    top: 24px;
-    right: 24px;
+  display: flex;
+  border-style: none;
+  position: absolute;
+  background-image: url("../assets/modalCloseBtnWhite.svg");
+  background-color: transparent;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  top: 24px;
+  right: 24px;
 }
 
 .modal__footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    justify-self: center;
-    width: 498px;
-    margin: 0 auto;
-    height: 112px;
-    background-color: #FFF;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-self: center;
+  width: 498px;
+  margin: 0 auto;
+  height: 112px;
+  background-color: #fff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .modal__text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin: 32px;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 32px;
+  width: auto;
 }
 
 .modal__caption {
-    font-family: "CabinetGrotesk-Bold";
-    margin: 0;
-    font-size: 20px;
-    line-height: 24px;
+  font-family: "CabinetGrotesk-Bold";
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .modal__weather {
-    font-family: "CabinetGrotesk-Bold";
-    margin: 0;
-    font-size: 20px;
-    line-height: 24px;
+  font-family: "CabinetGrotesk-Bold";
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
 }
 
-
 @media screen and (max-width: 720px) {
+  .item__modal .modal__container {
+    width: 343px;
+    height: 343px;
+    gap: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .modal__text-container {
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 12px;
+  }
 
-    .item__modal .modal__container {
-        width: 343px;
-        height: 343px;
-        gap: 10px;
-        border-radius: 8px;
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .modal__text-container {
-        margin-top: 20px;
-        margin-left: 20px;
-        gap: 12px;
-    }
+  .modal__footer {
+    width: 343px;
+    height: 120px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 
-    .modal__footer {
-        width: 343px;
-        height: 120px;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-    
-    .modal__container_type_image {
-        width: 343px;
-        height: 343px;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
+  .modal__container_type_image {
+    width: 343px;
+    height: 343px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 
-    .modal__close-btn {
-        width: 21px;
-        height:  21px;
-        border-radius: 1px;
-        top: 12px;
-        right: 13px;
-        
-    }
-    
-    .modal__image {
-        display: flex;
-        justify-content: center;
-        width: 343px;
-        height: 343px;
-        margin: 0 auto;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
+  .modal__close-btn {
+    width: 21px;
+    height: 21px;
+    border-radius: 1px;
+    top: 12px;
+    right: 13px;
+  }
 
+  .modal__image {
+    display: flex;
+    justify-content: center;
+    width: 343px;
+    height: 343px;
+    margin: 0 auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }

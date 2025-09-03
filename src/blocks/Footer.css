@@ -1,66 +1,64 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f3f3f3;
-    border-radius: 4px;
-    max-width: 100%;
-    margin-top: 40px;
-    height: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  max-width: 100%;
+  margin-top: 40px;
+  height: 40px;
 }
 
 .footer__left {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-self: center;
-    height: 20px;
-    width: 204px;
-    font-family: "CabinetGrotesk";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-self: center;
+  height: 20px;
+  width: 204px;
+  font-family: "CabinetGrotesk";
 }
 
 .footer__right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-self: center;
-    height: 20px;
-    width: 38px;
-    font-family: "CabinetGrotesk";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-self: center;
+  height: 20px;
+  width: 38px;
+  font-family: "CabinetGrotesk";
 }
 
 .footer__name {
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .footer__year {
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 720px) {
-    .footer {
-        justify-content: space-between;
-        margin-top: 20px;
-        border-radius: 4px;
-        max-width: 100%;
-        margin: 0;
-        gap: 10px;
-    }
-    
-    .footer__left {
-        height: 20px;
-        width: 204px;
-        font-family: "CabinetGrotesk";
-        font-size: 16px;
-    }
-    
-    .footer__right {
-        height: 20px;
-        width: 38px;
-        font-family: "CabinetGrotesk";
-        font-size: 16px;
-    }
+  .footer {
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 4px;
+    max-width: 100%;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .footer__left {
+    height: 20px;
+    width: 204px;
+    font-family: "CabinetGrotesk";
+    font-size: 16px;
+  }
+
+  .footer__right {
+    height: 20px;
+    width: 38px;
+    font-family: "CabinetGrotesk";
+    font-size: 16px;
+  }
 }

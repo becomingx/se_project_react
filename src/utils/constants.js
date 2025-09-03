@@ -4,7 +4,7 @@ const weatherCards = [
     condition: "clear",
     url: new URL("../assets/day/clear.svg", import.meta.url).href,
   },
-  {    
+  {
     day: true,
     condition: "clouds",
     url: new URL("../assets/day/clouds.svg", import.meta.url).href,
@@ -64,14 +64,9 @@ const weatherCards = [
 //not a sensitive API Key, OK to store here
 const openWeatherKey = "aaee6ab22aea5619b8be5635b7d26796";
 
-const coordinates = 
-{
-  latitude: 35.479980, 
-  longitude: -79.180542
+const coordinates = {
+  latitude: 35.47998,
+  longitude: -79.180542,
 };
 
-export {
-  openWeatherKey,
-  coordinates,
-  weatherCards
-};
+export { openWeatherKey, coordinates, weatherCards };

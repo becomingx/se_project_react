@@ -1,21 +1,21 @@
 import React from "react";
-import '../blocks/Footer.css';
+import "../blocks/Footer.css";
 
 const Footer = () => {
-    const authorName = "Patricia Tirado";
-    const year = "2025";
+  const authorName = "Patricia Tirado";
+  const year = "2025";
 
-    return (
-        <footer className="footer">
-            <div className="footer__left">
-                <span className="footer__name">{authorName}</span>
-            </div>
-            
-            <div className="footer__right">
-                <span className="footer__year">{year}</span>
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="footer">
+      <div className="footer__left">
+        <p className="footer__name">{authorName}</p>
+      </div>
+
+      <div className="footer__right">
+        <p className="footer__year">{year}</p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
