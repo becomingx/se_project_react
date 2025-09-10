@@ -1,72 +1,71 @@
 .card {
-    display: flex; 
-    position: relative;
-    flex-direction: column;
-    background-color: #F3F3F3;
-    border-radius: 8px;
-    height: 323px;
-    width: 325px;
-    margin-bottom: 20px;
-    font-family: "CabinetGrotesk";
-    font-size: 16px;
-    border: #0000004D;
-    border-width: 1px;
-    border-style:solid;
-    letter-spacing: 0%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  height: 323px;
+  width: 325px;
+  margin-bottom: 20px;
+  font-family: "CabinetGrotesk";
+  font-size: 16px;
+  border: #0000004d;
+  border-width: 1px;
+  border-style: solid;
+  letter-spacing: 0%;
 }
 
 .card__name {
-    display:flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-    width: 73px;
-    height: 24px;
-    border-radius: 4px;
-    font-family: "CabinetGrotesk-Bold";
-    font-size: 16px;
-    background-color: #FFF;
-    color: #00000099;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 73px;
+  height: 24px;
+  border-radius: 4px;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  background-color: #fff;
+  color: #00000099;
 }
 
 .card__image {
-    display: block;
-    border-radius: 8px;
-    height: 323px;
-    width: 325px;
-    object-fit: cover;
-    cursor: pointer;
+  display: block;
+  border-radius: 8px;
+  height: 323px;
+  width: 325px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .card__view-btn {
-    display: flex; 
-    position: absolute;
-    border-radius: 8px;
-    height: 323px;
-    width: 325px;
-    background-color: rgba(0, 0, 0, 0.5);
-    visibility: visible;
+  display: flex;
+  position: absolute;
+  border-radius: 8px;
+  height: 323px;
+  width: 325px;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: visible;
 }
 
 .card__label {
-    font-size: 16px;
-    line-height: 16px;
-    width: 74px;
-    height: 24px; 
+  font-size: 16px;
+  line-height: 16px;
+  width: 74px;
+  height: 24px;
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    height: 164px;
+    width: 164px;
   }
 
-
-@media screen and (max-width: 720px) {  
-    .card {
-        height: 164px;
-        width: 164px;
-    }
-  
-    .card__image {
-        height: 164px;
-        width: 164px;
-    }
+  .card__image {
+    height: 164px;
+    width: 164px;
+  }
 }

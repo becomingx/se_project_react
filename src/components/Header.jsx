@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/Logo.svg";
 import avatar from "../assets/AvatarFalse.svg";
+import ToggleSwitch from "./ToggleSwitch.jsx";
 import "../blocks/Header.css";
 
 const Header = ({ onClick, weatherData, menu, handleMobileMenu }) => {
@@ -23,6 +24,7 @@ const Header = ({ onClick, weatherData, menu, handleMobileMenu }) => {
       </div>
 
       <div className="header__right">
+        <ToggleSwitch/>
         <div className="header__user">
           <button
             type="button"

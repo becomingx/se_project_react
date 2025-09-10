@@ -1,12 +1,12 @@
 #root {
   min-height: 100vh;
-  margin: 0 auto;          
-  padding:  20px; 
-  background-color: #F3F3F3;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f3f3f3;
 }
 
 .page {
   max-width: 1360px;
-  margin: 0 auto; 
-  background-color: #f3f3f3;          
+  margin: 0 auto;
+  background-color: #f3f3f3;
 }
