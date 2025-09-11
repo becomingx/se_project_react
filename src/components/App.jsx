@@ -16,6 +16,7 @@ import {
 } from "../utils/constants.js";
 import "../blocks/App.css";
 import { defaultClothingItems } from "../utils/clothingItems.js";
+import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 
 /*
 TBD
@@ -23,11 +24,15 @@ data validation
 */
 
 const App = () => {
+  const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
   const [clothingItems, setClothingItems] = useState(defaultClothingItems);
   const [mobileMenuOpen, toggleMobileMenu] = useState(false);
   const [weatherData, setWeatherData] = useState({
     type: "",
-    temp: 0,
+    temp: {
+      F: 0,
+      C: 0
+    },
     city: "",
     condition: "",
     isDay: true,
@@ -46,6 +51,12 @@ const App = () => {
       });
   }, []);
 
+  const handleToggleSwitchChange = () => {
+    currentTemperatureUnit === "F"
+      ? setCurrentTemperatureUnit("C")
+      : setCurrentTemperatureUnit("F");
+  };
+
   const handleMobileMenu = () => {
     toggleMobileMenu(!mobileMenuOpen);
   };
@@ -63,12 +74,14 @@ const App = () => {
   };
 
   return (
-    <div className="page">
+    <CurrentTemperatureUnitContext.Provider value={{currentTemperatureUnit, handleToggleSwitchChange}}>
+      <div className="page">
       <Header
         onClick={handleAddClick}
         menu={mobileMenuOpen}
         weatherData={weatherData}
         handleMobileMenu={handleMobileMenu}
+
       />
 
       <Main
@@ -95,7 +108,7 @@ const App = () => {
             type="text"
             className="modal__input"
             id="name"
-            placeholder="Name"
+            placeholder="Name" 
           />
         </label>
         <label htmlFor="image-url" className="modal__label">
@@ -149,17 +162,9 @@ const App = () => {
         onClose={closeActiveModal}
         onClick={handleCardClick}
       />
-    </div>
+      </div>
+    </CurrentTemperatureUnitContext.Provider>
   );
 };
-
-<ModalWithForm title="Add garment" name="add-garment">
-  {/* These form inputs become the 'children' */}
-  <label htmlFor="name">
-    Name
-    <input type="text" id="name" />
-  </label>
-  {/* More inputs... */}
-</ModalWithForm>;
 
 export default App;

@@ -4,7 +4,9 @@ import avatar from "../assets/AvatarFalse.svg";
 import ToggleSwitch from "./ToggleSwitch.jsx";
 import "../blocks/Header.css";
 
-const Header = ({ onClick, weatherData, menu, handleMobileMenu }) => {
+
+const Header = ({ onClick, weatherData, menu, handleMobileMenu}) => {
+
   const currentDate = new Date().toLocaleString("default", {
     month: "long",
     day: "numeric",

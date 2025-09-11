@@ -19,11 +19,17 @@ const getWeather = (coordinates, openWeatherKey) => {
 const filterWeatherData = (data) => {
   const result = {};
   const now = Math.floor(Date.now() / 1000);
+
+  result.temp = {
+    F: data.main.temp,
+    C: Math.round((data.main.temp - 32) * 5/9)
+  };
+
   result.city = data.name;
-  result.temp = data.main.temp;
   result.type = getWeatherType(result.temp);
   result.condition = data.weather[0].main.toLowerCase();
   result.isDay = isDay(data.sys, now);
+
   return result;
 };
 
