@@ -16,8 +16,7 @@ import {
 } from "../utils/constants.js";
 import "../blocks/App.css";
 import { defaultClothingItems } from "../utils/clothingItems.js";
-import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
-
+import  CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 /*
 TBD
 data validation

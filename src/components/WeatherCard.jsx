@@ -1,11 +1,11 @@
 import React from "react";
 import { weatherCards } from "../utils/constants.js";
 import "../blocks/WeatherCard.css";
-import { CurrentTemperatureUnitContext } from '../contexts/CurrentTemperatureUnitContext';
+import  CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 import { useContext } from 'react';
 
 const WeatherCard = ({ weatherData }) => {
-  const { currentTemperatureUnit } = React.useContext(CurrentTemperatureUnitContext);
+  const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
 
   const weatherCardsFilter = weatherCards.filter((card) => {
     return (

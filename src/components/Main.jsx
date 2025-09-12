@@ -4,10 +4,10 @@ import { weatherCards } from "../utils/constants.js";
 import ItemCard from "./ItemCard.jsx";
 import "../blocks/Main.css";
 import { useContext } from 'react';
-import { CurrentTemperatureUnitContext } from '../contexts/CurrentTemperatureUnitContext';
+import  CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 
 const Main = ({ menu, weatherData, clothingItems, handleCardClick }) => {
-  const { currentTemperatureUnit } = React.useContext(CurrentTemperatureUnitContext);
+  const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
 
   return (
     <main className="content">
