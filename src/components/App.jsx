@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Main from "./Main.jsx";
 import ModalWithForm from "./ModalWithForm.jsx";
 import ItemModal from "./ItemModal.jsx";
+import Profile from "./Profile.jsx";
+import ClothesSection from "./ClothesSection.jsx";
+import Sidebar from "./Sidebar.jsx";
+import  CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
+
 import {
   getWeather,
   filterWeatherData,
@@ -14,9 +20,10 @@ import {
   openWeatherKey,
   weatherCards,
 } from "../utils/constants.js";
-import "../blocks/App.css";
+
 import { defaultClothingItems } from "../utils/clothingItems.js";
-import  CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
+import "../blocks/App.css";
+
 /*
 TBD
 data validation
@@ -80,15 +87,33 @@ const App = () => {
         menu={mobileMenuOpen}
         weatherData={weatherData}
         handleMobileMenu={handleMobileMenu}
-
       />
 
-      <Main
-        clothingItems={clothingItems}
-        weatherData={weatherData}
-        handleCardClick={handleCardClick}
-        menu={mobileMenuOpen}
-      />
+    <HashRouter 
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true
+      }}>
+      <Routes>
+        <Route 
+            path="/"
+            element={
+              <Main
+                clothingItems={clothingItems}
+                weatherData={weatherData}
+                handleCardClick={handleCardClick}
+                menu={mobileMenuOpen}
+              />}
+        />
+
+        <Route
+          path="/profile" 
+          element={
+            <Profile 
+            />}
+        />
+      </Routes>
+    </HashRouter>  
 
       <Footer />
 
