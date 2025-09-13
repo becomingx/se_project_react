@@ -62,16 +62,14 @@ const Header = ({ onClick, weatherData, menu, handleMobileMenu}) => {
             )}
             {menu && (
               <div className="mobile__menu_content">
-                {menu && (
-                  <div className="mobile__menu-btn">
+                  <div className="mobile__menu_btn-container">
                     <button
                       type="button"
                       className="mobile__menu_close-btn"
                       onClick={handleMobileMenu}
                     ></button>
                   </div>
-                )}
-
+              
                 <div className="mobile__menu_top-row">
                   <p className="header__user-name_mobile">{userName}</p>
                   <img
@@ -85,9 +83,11 @@ const Header = ({ onClick, weatherData, menu, handleMobileMenu}) => {
                     type="button"
                     className="header__add-button_mobile"
                     onClick={onClick}
-                  >
-                    + Add Clothes
+                    >+ Add Clothes
                   </button>
+                </div>
+                <div className="mobile__menu_last-row">
+                  <ToggleSwitch/>
                 </div>
               </div>
             )}
@@ -108,5 +108,12 @@ const Header = ({ onClick, weatherData, menu, handleMobileMenu}) => {
     </header>
   );
 };
+
+/*
+toggle-switch__mobile
+toggle-switch__C--mobile
+toggle-switch__F--mobile
+toggle-switch__checkbox--mobile
+*/
 
 export default Header;

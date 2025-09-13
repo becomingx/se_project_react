@@ -4,12 +4,20 @@ import  CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.j
 
 const ToggleSwitch = () => {
     const { currentTemperatureUnit, handleToggleSwitchChange } = useContext(CurrentTemperatureUnitContext);
+    const handleInputChange = (e) => {
+        e.stopPropagation(); // Prevents bubbling
+        handleToggleSwitchChange();
+    };
+    const handleLabelClick = (e) => {
+        e.stopPropagation(); // Also prevent bubbling on the label
+    };
+
     return (
-    <label className="toggle-switch">
+    <label className="toggle-switch" onClick={handleLabelClick}>
       <input
         type="checkbox"
         className="toggle-switch__checkbox"
-        onChange={handleToggleSwitchChange}
+        onChange={handleInputChange}
         checked={currentTemperatureUnit === "C"}
       />
       <span className="toggle-switch__F">F</span>
