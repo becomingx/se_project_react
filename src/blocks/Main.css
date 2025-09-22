@@ -1,11 +1,11 @@
 .content {
   max-width: 100%;
+  max-height: 100%;
   background-color: #f3f3f3;
   margin: 33px 0 33px 0;
 }
 
 .cards__page-section {
-  max-width: 100%;
   margin: 0 auto;
   background-color: #f3f3f3;
 }

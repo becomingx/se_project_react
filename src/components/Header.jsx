@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import logo from "../assets/Logo.svg";
 import avatar from "../assets/AvatarFalse.svg";
 import ToggleSwitch from "./ToggleSwitch.jsx";
@@ -19,7 +20,7 @@ const Header = ({ onClick, weatherData, menu, handleMobileMenu}) => {
     <header className="header">
       <div className="header__left">
         <div className="header__info">
-          <span className="header__logo">wtwr&deg;</span>
+          <Link to="/" className="header__link"><span className="header__logo">wtwr&deg;</span></Link>
           <p className="header__date">{headerDate}</p>
           <p className="header__location">{weatherData.city}</p>
         </div>
@@ -30,17 +31,21 @@ const Header = ({ onClick, weatherData, menu, handleMobileMenu}) => {
         <div className="header__user">
           <button
             type="button"
-            className="header__add-button"
+            className="header__add-btn"
             onClick={onClick}
           >
             + Add Clothes
           </button>
-          <p className="header__user-name">{userName}</p>
-          <img
-            src={avatar}
-            alt={`${userName}'s avatar`}
-            className="header__avatar"
-          />
+          <Link to="/profile" className="header__username-link">
+            <p className="header__user-name">{userName}</p>
+          </Link>
+          <Link to="/profile" className="header__link">
+            <img
+              src={avatar}
+              alt={`${userName}'s avatar`}
+              className="header__avatar"
+            />
+          </Link>
         </div>
       </div>
 
@@ -81,7 +86,7 @@ const Header = ({ onClick, weatherData, menu, handleMobileMenu}) => {
                 <div className="mobile__menu_bottom-row">
                   <button
                     type="button"
-                    className="header__add-button_mobile"
+                    className="header__add-btn_mobile"
                     onClick={onClick}
                     >+ Add Clothes
                   </button>
