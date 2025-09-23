@@ -17,34 +17,35 @@ const getWeather = (coordinates, openWeatherKey) => {
 };
 
 const filterWeatherData = (data) => {
+  const isDay = ({ sunrise, sunset }, now) => {
+    return sunrise < now && now < sunset;
+  };
+
   const result = {};
   const now = Math.floor(Date.now() / 1000);
-
+  
   result.temp = {
     F: data.main.temp,
     C: Math.round((data.main.temp - 32) * 5/9)
   };
 
+  const getWeatherType = (temperature) => {  
+    if (temperature >= 86) {
+      return "hot";
+    } else if (temperature >= 66 && temperature < 86) {
+      return "warm";
+    } else {
+      return "cold";
+    }
+  };
+
   result.city = data.name;
-  result.type = getWeatherType(result.temp);
+  result.type = getWeatherType(result.temp.F);
   result.condition = data.weather[0].main.toLowerCase();
   result.isDay = isDay(data.sys, now);
 
   return result;
 };
 
-const getWeatherType = (temperature) => {
-  if (temperature >= 86) {
-    return "hot";
-  } else if (temperature >= 66 && temperature < 86) {
-    return "warm";
-  } else {
-    return "cold";
-  }
-};
 
-const isDay = ({ sunrise, sunset }, now) => {
-  return sunrise < now && now < sunset;
-};
-
-export { getWeather, filterWeatherData, getWeatherType };
+export { getWeather, filterWeatherData };

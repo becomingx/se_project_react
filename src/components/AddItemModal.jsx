@@ -2,7 +2,7 @@ import { useState } from "react";
 import ModalWithForm from "./ModalWithForm.jsx";
 
 // onAddItem refers to the submit handler declared in App.jsx
-const AddItemModal = ({ isOpen, handleSubmit, onClose }) => {
+const AddItemModal = ({ isOpen, onAddItem, onClose }) => {
   // ...
 
   return (
@@ -12,7 +12,7 @@ const AddItemModal = ({ isOpen, handleSubmit, onClose }) => {
       buttonText="Add Garment"
       isOpen={isOpen}
       onClose={onClose}
-      onSubmit={handleSubmit}
+      onAddItem={onAddItem}
     >
       <>
         <label htmlFor="name" className="modal__label">

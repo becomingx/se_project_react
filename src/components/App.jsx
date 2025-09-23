@@ -8,15 +8,10 @@ import ItemModal from "./ItemModal.jsx";
 import Profile from "./Profile.jsx";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 
-import {
-  getWeather,
-  filterWeatherData,
-  getWeatherType,
-} from "../utils/WeatherApi.js";
+import { getWeather, filterWeatherData } from "../utils/WeatherApi.js";
 import {
   coordinates,
-  openWeatherKey,
-  weatherCards,
+  openWeatherKey
 } from "../utils/constants.js";
 
 import { defaultClothingItems } from "../utils/clothingItems.js";
@@ -77,6 +72,10 @@ const App = () => {
     setSelectedCard(card);
   };
 
+  const handleSubmit = (item) => {
+    setClothingItems([item, ...clothingItems]);
+  };
+
   return (
     <CurrentTemperatureUnitContext.Provider
       value={{ currentTemperatureUnit, handleToggleSwitchChange }}
@@ -126,6 +125,7 @@ const App = () => {
         <AddItemModal
           isOpen={activeModal === "add garment"}
           onClose={closeActiveModal}
+          onAddItem={handleSubmit}
         />
 
         <ItemModal
