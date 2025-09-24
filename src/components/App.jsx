@@ -72,9 +72,7 @@ const App = () => {
     setSelectedCard(card);
   };
 
-  const handleSubmit = (item) => {
-    setClothingItems([item, ...clothingItems]);
-  };
+  const onAddItem = (inputValue) => {};
 
   return (
     <CurrentTemperatureUnitContext.Provider
@@ -125,7 +123,7 @@ const App = () => {
         <AddItemModal
           isOpen={activeModal === "add garment"}
           onClose={closeActiveModal}
-          onAddItem={handleSubmit}
+          onAddItem={onAddItem}
         />
 
         <ItemModal
