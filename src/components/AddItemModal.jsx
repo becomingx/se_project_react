@@ -1,12 +1,16 @@
-import { useState } from "react";
 import ModalWithForm from "./ModalWithForm.jsx";
 import useForm from "../hooks/useForm.js";
 
 const AddItemModal = ({ isOpen, onAddItem, onClose }) => {
-  const defaultValues = { name: "", image_link: "", weatherType: "" };
-  const { values, handleChange } = useForm({ defaultValues });
+  const defaultValues = { name: "", weatherType: "", link: "" };
+  const { values, handleChange } = useForm(defaultValues);
 
-  const handleSubmit = (evt) => {};
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    console.log("Form values:", values); // Debug line
+    onAddItem(values);
+    console.log("onAddItem called");
+  };
 
   return (
     <ModalWithForm
@@ -15,7 +19,7 @@ const AddItemModal = ({ isOpen, onAddItem, onClose }) => {
       buttonText="Add Garment"
       isOpen={isOpen}
       onClose={onClose}
-      onSubmit={onAddItem}
+      onSubmit={handleSubmit}
     >
       <>
         <label htmlFor="name" className="modal__label">
@@ -30,50 +34,50 @@ const AddItemModal = ({ isOpen, onAddItem, onClose }) => {
             onChange={handleChange}
           />
         </label>
-        <label htmlFor="image-url" className="modal__label">
+        <label htmlFor="link" className="modal__label">
           Image {""}
           <input
             type="url"
-            name="image_link"
+            name="link"
             className="modal__input"
-            id="image-url"
+            id="link"
             placeholder="Image"
-            value={values.image_link || ""}
+            value={values.link || ""}
             onChange={handleChange}
           />
         </label>
 
         <fieldset className="modal__radio-fieldset">
           <legend className="modal__legend">Select the weather type:</legend>
-          <label htmlFor="hot" className="modal__label_radio">
+          <label htmlFor="radio_hot" className="modal__label_radio">
             <input
               type="radio"
               className="modal__radio-input"
               value="hot"
               id="radio_hot"
-              name="temp"
+              name="weatherType"
               onChange={handleChange}
             />
             Hot
           </label>
-          <label htmlFor="warm" className="modal__label_radio">
+          <label htmlFor="radio_warm" className="modal__label_radio">
             <input
               type="radio"
               className="modal__radio-input"
               value="warm"
               id="radio_warm"
-              name="temp"
+              name="weatherType"
               onChange={handleChange}
             />
             Warm
           </label>
-          <label htmlFor="cold" className="modal__label_radio">
+          <label htmlFor="radio_cold" className="modal__label_radio">
             <input
               type="radio"
               className="modal__radio-input"
               value="cold"
               id="radio_cold"
-              name="temp"
+              name="weatherType"
               onChange={handleChange}
             />
             Cold

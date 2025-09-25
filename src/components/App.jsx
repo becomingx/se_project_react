@@ -7,13 +7,8 @@ import AddItemModal from "./AddItemModal.jsx";
 import ItemModal from "./ItemModal.jsx";
 import Profile from "./Profile.jsx";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
-
 import { getWeather, filterWeatherData } from "../utils/WeatherApi.js";
-import {
-  coordinates,
-  openWeatherKey
-} from "../utils/constants.js";
-
+import { coordinates, openWeatherKey } from "../utils/constants.js";
 import { defaultClothingItems } from "../utils/clothingItems.js";
 import "../blocks/App.css";
 
@@ -72,7 +67,20 @@ const App = () => {
     setSelectedCard(card);
   };
 
-  const onAddItem = (inputValue) => {};
+  const onAddItem = (inputValues) => {
+    //fetch
+    //.then(res)...includes all the things from below
+    const newCardData = {
+      name: inputValues.name,
+      weather: inputValues.weatherType,
+      link: inputValues.link,
+    };
+    //don't use newcarddata for api structure, doesn't have id
+    //id will be included in the response data
+    setClothingItems([...clothingItems, newCardData]);
+    closeActiveModal();
+    //.catch()
+  };
 
   return (
     <CurrentTemperatureUnitContext.Provider

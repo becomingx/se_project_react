@@ -1,7 +1,6 @@
 import React from "react";
 import WeatherCard from "./WeatherCard.jsx";
 import { weatherCards } from "../utils/constants.js";
-import {defaultClothingItems} from "../utils/clothingItems.js";
 import ItemCard from "./ItemCard.jsx";
 import "../blocks/Main.css";
 import { useContext } from 'react';

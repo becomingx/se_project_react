@@ -4,7 +4,14 @@ import "../blocks/ModalWithForm.css";
 //TODO
 //radio button, form submit functionality
 
-const ModalWithForm = ({ title, buttonText, isOpen, onClose, children }) => {
+const ModalWithForm = ({
+  title,
+  buttonText,
+  isOpen,
+  onClose,
+  onSubmit,
+  children,
+}) => {
   return (
     <div className={`modal ${isOpen ? "modal_opened" : ""}`}>
       <div className="add__modal_content">
@@ -14,7 +21,11 @@ const ModalWithForm = ({ title, buttonText, isOpen, onClose, children }) => {
           className="add__modal_close-btn"
           onClick={onClose}
         />
-        <form name="add-form" className="modal__form">
+        <form
+          onSubmit={onSubmit}
+          name="add-form"
+          className="modal__form"
+        >
           {children}
           <button type="submit" className="modal__submit-btn">
             {buttonText}
