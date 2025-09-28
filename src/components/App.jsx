@@ -10,7 +10,7 @@ import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.js
 import { getWeather, filterWeatherData } from "../utils/WeatherApi.js";
 import { coordinates, openWeatherKey } from "../utils/constants.js";
 import { defaultClothingItems } from "../utils/clothingItems.js";
-import ConfirmationModal from "./ConfirmationModal.jsx";
+import DeleteConfirmationModal from "./DeleteConfirmationModal.jsx";
 import "../blocks/App.css";
 
 /*
@@ -70,6 +70,21 @@ const App = () => {
 
   const handleDeleteClick = () => {
     setActiveModal("open delete confirmation");
+    //saves card to delete in the state
+  };
+
+  const handleCardDelete = () => {
+    //delete()
+    //.then(res)
+    //update clothingItems state
+    //modals close
+    //state containing card reset
+    //.catch()
+    /*
+the handleCardDelete handler, which is passed from the App to the DeleteConfirmationModal component. 
+This handler makes the API call. After a successful API request, the clothingItems state needs to be updated, 
+the modals closed, and the state containing the card should be reset.
+*/
   };
 
   const onAddItem = (inputValues) => {
@@ -130,30 +145,30 @@ const App = () => {
               }
             />
           </Routes>
+
+          <Footer />
+
+          <AddItemModal
+            isOpen={activeModal === "add garment"}
+            onClose={closeActiveModal}
+            onAddItem={onAddItem}
+            onClick={handleAddClick}
+          />
+
+          <DeleteConfirmationModal
+            isOpen={activeModal === "open delete confirmation"}
+            onClose={closeActiveModal}
+            card={selectedCard}
+            //handleCardDelete={handleCardDelete}
+          />
+
+          <ItemModal
+            isOpen={activeModal === "view item"}
+            card={selectedCard}
+            onClose={closeActiveModal}
+            openConfirmationModal={handleDeleteClick}
+          />
         </HashRouter>
-
-        <Footer />
-
-        <AddItemModal
-          isOpen={activeModal === "add garment"}
-          onClose={closeActiveModal}
-          onAddItem={onAddItem}
-          onClick={handleAddClick}
-        />
-
-        <ConfirmationModal
-          isOpen={activeModal === "open delete confirmation"}
-          onClose={closeActiveModal}
-          card={selectedCard}
-        />
-
-        <ItemModal
-          isOpen={activeModal === "view item"}
-          card={selectedCard}
-          onClose={closeActiveModal}
-          onCardClick={handleCardClick}
-          onDeleteClick={handleDeleteClick}
-        />
       </div>
     </CurrentTemperatureUnitContext.Provider>
   );

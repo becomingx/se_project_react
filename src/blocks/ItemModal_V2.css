@@ -1,0 +1,110 @@
+.item__modal_container-V2 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  width: 670px;
+  height: 368px;
+  border-radius: 16px;
+}
+
+.delete-btn__container_V2 {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0 0 12px 28px;
+}
+
+.item__modal_delete-btn_V2 {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #ff4d00;
+  height: auto;
+  width: auto;
+}
+
+.modal__container_type_image_V2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 323px;
+  height: 326px;
+  background-color: transparent;
+  margin: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.modal__card__name_V2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 73px;
+  height: 24px;
+  border-radius: 4px;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 16px;
+  background-color: #fff;
+  color: #00000099;
+}
+
+.modal__image_V2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 323px;
+  height: 326px;
+  border-radius: 16px;
+}
+
+.modal__close-btn_V2 {
+  display: flex;
+  border-style: none;
+  position: absolute;
+  background-image: url("../assets/modalCloseBtn.svg");
+  background-color: transparent;
+  opacity: 0.3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  top: 24px;
+  right: 24px;
+}
+
+.modal__side-container_V2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 325px;
+  height: 328px;
+}
+
+.modal__text-container_V2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 32px 0 0 28px;
+  width: auto;
+}
+
+.modal__weather_V2 {
+  font-family: "CabinetGrotesk-Bold";
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+}

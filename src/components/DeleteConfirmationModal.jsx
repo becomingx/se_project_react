@@ -1,7 +1,7 @@
 import React from "react";
-import "../blocks/ConfirmationModal.css";
+import "../blocks/DeleteConfirmationModal.css";
 
-const ConfirmationModal = ({isOpen, onClose, card}) => {
+const DeleteConfirmationModal = ({isOpen, onClose, card}) => {
   return (
     <div className={`modal ${isOpen ? "modal_opened" : ""}`}>
       <div className="confirmation__modal_container">
@@ -23,4 +23,4 @@ const ConfirmationModal = ({isOpen, onClose, card}) => {
   );
 };
 
-export default ConfirmationModal;
+export default DeleteConfirmationModal;

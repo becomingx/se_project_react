@@ -1,8 +1,8 @@
 import React from "react";
 import "../blocks/ClothesSection.css";
 import ItemCard from "./ItemCard.jsx";
-import { defaultClothingItems } from "../utils/clothingItems.js";
 import { useContext } from "react";
+import ItemModal from "./ItemModal.jsx";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 
 const ClothesSection = ({
@@ -14,7 +14,6 @@ const ClothesSection = ({
   const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
 
   return (
-
     <div className="clothes-section__container">
       <div className="clothes-section__header-info">
         <p className="clothes-section__header-writing">Your Items</p>
@@ -42,6 +41,7 @@ const ClothesSection = ({
             );
           })}
       </ul>
+
     </div>
   );
 };
