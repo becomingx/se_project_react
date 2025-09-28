@@ -1,9 +1,6 @@
 import React from "react";
 import "../blocks/ModalWithForm.css";
 
-//TODO
-//radio button, form submit functionality
-
 const ModalWithForm = ({
   title,
   buttonText,

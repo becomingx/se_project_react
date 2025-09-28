@@ -1,5 +1,6 @@
 import React from "react";
 import "../blocks/ItemCard.css";
+import Main from "./Main";
 
 const ItemCard = ({ item, onCardClick }) => {
   return (

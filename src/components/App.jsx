@@ -10,6 +10,7 @@ import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.js
 import { getWeather, filterWeatherData } from "../utils/WeatherApi.js";
 import { coordinates, openWeatherKey } from "../utils/constants.js";
 import { defaultClothingItems } from "../utils/clothingItems.js";
+import ConfirmationModal from "./ConfirmationModal.jsx";
 import "../blocks/App.css";
 
 /*
@@ -32,6 +33,7 @@ const App = () => {
     isDay: true,
   });
   const [activeModal, setActiveModal] = useState("");
+  const [cardToDelete, submitDeleteCard] = useState({});
   const [selectedCard, setSelectedCard] = useState({});
 
   useEffect(() => {
@@ -65,6 +67,18 @@ const App = () => {
   const handleCardClick = (card) => {
     setActiveModal("view item");
     setSelectedCard(card);
+  };
+
+  /*
+  const handleDeleteCard = (deletedCard) => {
+    //delete
+    //.then(res)
+    //.catch
+    submitDeleteCard(deletedCard);
+  };*/
+
+  const handleDeleteBtn = () => {
+    setActiveModal("open delete confirmation");
   };
 
   const onAddItem = (inputValues) => {
@@ -119,6 +133,7 @@ const App = () => {
                   clothingItems={clothingItems}
                   weatherData={weatherData}
                   handleCardClick={handleCardClick}
+                  handleAddClick={handleAddClick}
                   menu={mobileMenuOpen}
                 />
               }
@@ -132,13 +147,21 @@ const App = () => {
           isOpen={activeModal === "add garment"}
           onClose={closeActiveModal}
           onAddItem={onAddItem}
+          onClick={handleAddClick}
+        />
+
+        <ConfirmationModal
+          isOpen={activeModal === "open delete confirmation"}
+          onClose={closeActiveModal}
+          /*handleDeleteCard={handleDeleteCard}*/
         />
 
         <ItemModal
           isOpen={activeModal === "view item"}
           card={selectedCard}
           onClose={closeActiveModal}
-          onClick={handleCardClick}
+          onCardClick={handleCardClick}
+          handleDeleteBtn={handleDeleteBtn}
         />
       </div>
     </CurrentTemperatureUnitContext.Provider>

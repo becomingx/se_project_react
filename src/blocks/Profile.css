@@ -27,7 +27,7 @@
   align-content: flex-start;
   margin-top: 47px;
   width: 385px;
-  height: 100vh;
+  height: auto;
 }
 
 .profile__header {

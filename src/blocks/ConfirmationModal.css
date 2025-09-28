@@ -1,0 +1,75 @@
+.confirmation__modal_container {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0 auto;
+  gap: 20px;
+  border-radius: 16px;
+  width: 670px;
+  height: 280px;
+}
+
+.confirmation__modal_title {
+  display: flex;
+  width: 367px;
+  height: auto;
+  margin: 0 auto;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.confirmation__modal_delete-container {
+  display: flex;
+  margin: 0 auto;
+  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: auto;
+  height: auto;
+}
+
+.confirm__delete {
+  color: #ff4d00;
+  background-color: transparent;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border: none;
+}
+
+.cancel {
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border: none;
+}
+
+.confirmation__modal_close-btn {
+  display: flex;
+  position: absolute;
+  border-style: none;
+  background-image: url("../assets/modalCloseBtn.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+}

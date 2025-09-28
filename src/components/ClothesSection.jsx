@@ -5,11 +5,7 @@ import { defaultClothingItems } from "../utils/clothingItems.js";
 import { useContext } from "react";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 
-/*ClothesSection displays all the clothing items from the current 
-application state and includes a button that opens the AddItemModal component.*/
-
 const ClothesSection = ({
-  menu,
   weatherData,
   clothingItems,
   handleAddClick,

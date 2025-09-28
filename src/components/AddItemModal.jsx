@@ -7,9 +7,7 @@ const AddItemModal = ({ isOpen, onAddItem, onClose }) => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log("Form values:", values); // Debug line
     onAddItem(values);
-    console.log("onAddItem called");
   };
 
   return (
