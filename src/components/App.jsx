@@ -22,6 +22,8 @@ const App = () => {
   const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
   const [clothingItems, setClothingItems] = useState(defaultClothingItems);
   const [mobileMenuOpen, toggleMobileMenu] = useState(false);
+  const [activeModal, setActiveModal] = useState("");
+  const [selectedCard, setSelectedCard] = useState({});
   const [weatherData, setWeatherData] = useState({
     type: "",
     temp: {
@@ -32,9 +34,6 @@ const App = () => {
     condition: "",
     isDay: true,
   });
-  const [activeModal, setActiveModal] = useState("");
-  const [cardToDelete, submitDeleteCard] = useState({});
-  const [selectedCard, setSelectedCard] = useState({});
 
   useEffect(() => {
     getWeather(coordinates, openWeatherKey)
@@ -69,15 +68,7 @@ const App = () => {
     setSelectedCard(card);
   };
 
-  /*
-  const handleDeleteCard = (deletedCard) => {
-    //delete
-    //.then(res)
-    //.catch
-    submitDeleteCard(deletedCard);
-  };*/
-
-  const handleDeleteBtn = () => {
+  const handleDeleteClick = () => {
     setActiveModal("open delete confirmation");
   };
 
@@ -153,7 +144,7 @@ const App = () => {
         <ConfirmationModal
           isOpen={activeModal === "open delete confirmation"}
           onClose={closeActiveModal}
-          /*handleDeleteCard={handleDeleteCard}*/
+          card={selectedCard}
         />
 
         <ItemModal
@@ -161,7 +152,7 @@ const App = () => {
           card={selectedCard}
           onClose={closeActiveModal}
           onCardClick={handleCardClick}
-          handleDeleteBtn={handleDeleteBtn}
+          onDeleteClick={handleDeleteClick}
         />
       </div>
     </CurrentTemperatureUnitContext.Provider>

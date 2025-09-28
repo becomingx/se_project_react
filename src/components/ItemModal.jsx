@@ -1,7 +1,7 @@
 import React from "react";
 import "../blocks/ItemModal.css";
 
-const ItemModal = ({ isOpen, onClose, card, handleDeleteBtn }) => {
+const ItemModal = ({ isOpen, onClose, card, onDeleteClick }) => {
   return (
     <div className={`modal ${isOpen ? "modal_opened" : ""}`}>
       <div className="item__modal modal__container">
@@ -19,10 +19,7 @@ const ItemModal = ({ isOpen, onClose, card, handleDeleteBtn }) => {
             <p className="modal__weather">Weather: {card.weather}</p>
           </div>
           <div className="delete-btn__container">
-            <button
-              className="item__modal_delete-btn"
-              handleDeleteBtn={handleDeleteBtn}
-            >
+            <button className="item__modal_delete-btn" onClick={onDeleteClick}>
               Delete Item
             </button>
           </div>

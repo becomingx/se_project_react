@@ -1,12 +1,11 @@
-import ItemModal from "./ItemModal.jsx";
-import ItemCard from "./ItemCard.jsx";
+import React from "react";
 import "../blocks/ConfirmationModal.css";
 
-const ConfirmationModal = (isOpen, onClose, handleDeleteCard) => {
+const ConfirmationModal = ({isOpen, onClose, card}) => {
   return (
     <div className={`modal ${isOpen ? "modal_opened" : ""}`}>
       <div className="confirmation__modal_container">
-        <div className="confirmation__modal_close-btn"></div>
+        <div type="button" className="confirmation__modal_close-btn" onClick={onClose} />
 
         <h2 className="confirmation__modal_title">
           Are you sure you want to delete this item? This action is
@@ -14,13 +13,8 @@ const ConfirmationModal = (isOpen, onClose, handleDeleteCard) => {
         </h2>
 
         <div className="confirmation__modal_delete-container">
-          <button
-            className="confirm__delete"
-            handleDeleteCard={handleDeleteCard}
-          >
-            Yes, Delete Item
-          </button>
-          <button className="cancel" onClose={onClose}>
+          <button type="button" className="confirm__delete">Yes, Delete Item</button>
+          <button type="button" className="cancel" onClick={onClose}>
             Cancel
           </button>
         </div>
