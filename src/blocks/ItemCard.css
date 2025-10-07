@@ -23,7 +23,8 @@
   justify-content: center;
   position: absolute;
   text-align: center;
-  width: 73px;
+  width: auto;
+  padding: 0 8px 0 8px;
   height: 24px;
   border-radius: 4px;
   font-family: "CabinetGrotesk-Bold";

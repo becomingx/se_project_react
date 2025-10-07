@@ -9,18 +9,23 @@ import Profile from "./Profile.jsx";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 import { getWeather, filterWeatherData } from "../utils/WeatherApi.js";
 import { coordinates, openWeatherKey } from "../utils/constants.js";
-import { defaultClothingItems } from "../utils/clothingItems.js";
 import DeleteConfirmationModal from "./DeleteConfirmationModal.jsx";
+import { getItems, addItem, removeItem } from "../utils/api.js";
 import "../blocks/App.css";
 
 /*
 TBD
 data validation
+
+API calls
+--Modify the corresponding Effect hook to add the items to the application state from the server.
+--Remove the utils/clothingItems.js file containing the default items that we used in the previous project. 
+--From now on, we'll fetch items from the server. Yes, it's a mock server, but it's a server nonetheless!
 */
 
 const App = () => {
   const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
-  const [clothingItems, setClothingItems] = useState(defaultClothingItems);
+  const [clothingItems, setClothingItems] = useState([]);
   const [mobileMenuOpen, toggleMobileMenu] = useState(false);
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
@@ -44,6 +49,14 @@ const App = () => {
       .catch((error) => {
         console.error("Failed to fetch weather data:", error);
       });
+
+    getItems()
+      .then((data) => {
+        setClothingItems(data);
+      })
+      .catch((error) => {
+        console.error("Failed to fetch clothing data", error);
+      });
   }, []);
 
   const handleToggleSwitchChange = () => {
@@ -55,6 +68,7 @@ const App = () => {
   const handleMobileMenu = () => {
     toggleMobileMenu(!mobileMenuOpen);
   };
+
   const handleAddClick = () => {
     setActiveModal("add garment");
   };
@@ -87,19 +101,21 @@ the modals closed, and the state containing the card should be reset.
 */
   };
 
-  const onAddItem = (inputValues) => {
-    //fetch
-    //.then(res)...includes all the things from below
+  const onAddItem = (inputValues, handleReset) => {
     const newCardData = {
       name: inputValues.name,
-      weather: inputValues.weatherType,
-      link: inputValues.link,
+      weather: inputValues.weather,
+      imageUrl: inputValues.imageUrl,
     };
-    //don't use newcarddata for api structure, doesn't have id
-    //id will be included in the response data
-    setClothingItems([...clothingItems, newCardData]);
-    closeActiveModal();
-    //.catch()
+
+    addItem(newCardData, handleReset)
+      .then((data) => {
+        const updatedItems = [data, ...clothingItems];
+        setClothingItems([data, ...clothingItems]);
+        closeActiveModal();
+        handleReset();
+      })
+      .catch(console.error);
   };
 
   return (

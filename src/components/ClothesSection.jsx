@@ -2,8 +2,9 @@ import React from "react";
 import "../blocks/ClothesSection.css";
 import ItemCard from "./ItemCard.jsx";
 import { useContext } from "react";
-import ItemModal from "./ItemModal.jsx";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
+
+////TBD: responsive design
 
 const ClothesSection = ({
   weatherData,

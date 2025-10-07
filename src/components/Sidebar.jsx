@@ -4,7 +4,8 @@ import avatar from "../assets/AvatarFalse.svg";
 import { useContext } from "react";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnit.jsx";
 
-//SideBar displays the current user's username and avatar (still hardcoded).
+// TBD: responsive design
+// SideBar displays the current user's username and avatar (still hardcoded).
 
 const Sidebar = () => {
   const userName = "Patricia Tirado";

@@ -22,7 +22,7 @@ const ItemModal = ({ isOpen, onClose, card, openConfirmationModal }) => {
               className="modal__close-btn"
               onClick={onClose}
             />
-            <img src={card.link} alt={card.name} className="modal__image" />
+            <img src={card.imageUrl} alt={card.name} className="modal__image" />
           </div>
           <div className="modal__footer">
             <div className="modal__text-container">
@@ -49,7 +49,7 @@ const ItemModal = ({ isOpen, onClose, card, openConfirmationModal }) => {
           />
           <div className="modal__container_type_image_V2">
           <h2 className="modal__card__name_V2">{card.name}</h2>
-            <img src={card.link} alt={card.name} className="modal__image_V2" />
+            <img src={card.imageUrl} alt={card.name} className="modal__image_V2" />
           </div>
 
           <div className="modal__side-container_V2">
